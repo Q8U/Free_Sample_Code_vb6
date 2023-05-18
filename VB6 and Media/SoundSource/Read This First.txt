@@ -1,0 +1,22 @@
+Thanks For Downloading This Source
+
+Hi Guys.
+
+	How is life. We the Programmer's of BrainFusion Present The Dancer.Ocx Which is capable of reading The Sound Peak Form Sound Card When Mp3 or Wav File Is Played(irrespective of player used(player independent)). It Tooks Us A Great Deal Of Time Please Don't  forget Mail Us. And Vote Us.
+
+	This Ocx is capable of reading the soundcard at a timeInterval of 1/1000 to 50 /1000 of a second.
+
+	This Ocx is Capable of Dancing According to the Sound. Or you can hide the Ocx And Get Only The SoundVolume From The Sub OnTimer.
+
+	This Dancer Ocx has Two Parts 
+
+	1. Bar Displayer
+	2. Graph Displayer.
+
+	The Code For The Ocx Will Be Released Soon. Sorry Guys Please  :-) . Still in Beta. Any Body Needs The Code Very Badly You Can Contact Me At.
+	
+
+	email : imthiazrafiq@hotmail.com
+	Icq     : 24294947
+
+	Web  : http://brainfusion.gq.nu/ [under construction]

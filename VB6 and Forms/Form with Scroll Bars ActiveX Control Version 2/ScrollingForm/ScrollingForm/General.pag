@@ -1,0 +1,229 @@
+VERSION 5.00
+Begin VB.PropertyPage General 
+   Caption         =   "General"
+   ClientHeight    =   4260
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6435
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   4260
+   ScaleWidth      =   6435
+   Begin VB.Frame Frame1 
+      Caption         =   "How to use:"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000C0&
+      Height          =   3735
+      Left            =   240
+      TabIndex        =   0
+      Top             =   240
+      Width           =   5895
+      Begin VB.Label Label14 
+         BackStyle       =   0  'Transparent
+         Caption         =   "If you added Command Buttons to your Picture Boxes (The pages) you should set their Style property to Graphical."
+         ForeColor       =   &H80000001&
+         Height          =   495
+         Left            =   480
+         TabIndex        =   14
+         Top             =   2640
+         Width           =   5175
+      End
+      Begin VB.Label Label13 
+         BackStyle       =   0  'Transparent
+         Caption         =   "5."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H000000FF&
+         Height          =   255
+         Left            =   240
+         TabIndex        =   13
+         Top             =   2640
+         Width           =   255
+      End
+      Begin VB.Label Label8 
+         BackStyle       =   0  'Transparent
+         Caption         =   "6."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H000000FF&
+         Height          =   255
+         Left            =   240
+         TabIndex        =   12
+         Top             =   3120
+         Width           =   255
+      End
+      Begin VB.Label Label3 
+         BackStyle       =   0  'Transparent
+         Caption         =   $"General.pgx":0000
+         ForeColor       =   &H80000001&
+         Height          =   615
+         Left            =   840
+         TabIndex        =   11
+         Top             =   1920
+         Width           =   4815
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Tip: "
+         ForeColor       =   &H80000002&
+         Height          =   255
+         Left            =   480
+         TabIndex        =   10
+         Top             =   1920
+         Width           =   375
+      End
+      Begin VB.Label Label1 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Set the visible property of each PictureBox to False."
+         ForeColor       =   &H80000001&
+         Height          =   255
+         Left            =   480
+         TabIndex        =   9
+         Top             =   1080
+         Width           =   5175
+      End
+      Begin VB.Label Label12 
+         BackStyle       =   0  'Transparent
+         Caption         =   "4."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H000000FF&
+         Height          =   255
+         Left            =   240
+         TabIndex        =   8
+         Top             =   1440
+         Width           =   255
+      End
+      Begin VB.Label Label11 
+         BackStyle       =   0  'Transparent
+         Caption         =   "3."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H000000FF&
+         Height          =   255
+         Left            =   240
+         TabIndex        =   7
+         Top             =   1080
+         Width           =   255
+      End
+      Begin VB.Label Label10 
+         BackStyle       =   0  'Transparent
+         Caption         =   "2."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H000000FF&
+         Height          =   255
+         Left            =   240
+         TabIndex        =   6
+         Top             =   720
+         Width           =   255
+      End
+      Begin VB.Label Label9 
+         BackStyle       =   0  'Transparent
+         Caption         =   "1."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H000000FF&
+         Height          =   255
+         Left            =   240
+         TabIndex        =   5
+         Top             =   360
+         Width           =   255
+      End
+      Begin VB.Label Label7 
+         BackStyle       =   0  'Transparent
+         Caption         =   "On the Form_Load Event call the AddPage function. Each Picture Box will correspond to a page."
+         ForeColor       =   &H80000001&
+         Height          =   495
+         Left            =   480
+         TabIndex        =   4
+         Top             =   3120
+         Width           =   5175
+      End
+      Begin VB.Label Label6 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Insert other controls (Such us Command Buttons, Text Boxes...) into each Picture Box."
+         ForeColor       =   &H80000001&
+         Height          =   375
+         Left            =   480
+         TabIndex        =   3
+         Top             =   1440
+         Width           =   5175
+      End
+      Begin VB.Label Label5 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Insert one or more Picture Boxes into the ScrllngFrm Control."
+         ForeColor       =   &H80000001&
+         Height          =   255
+         Left            =   480
+         TabIndex        =   2
+         Top             =   720
+         Width           =   5175
+      End
+      Begin VB.Label Label4 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Insert a ScrllngFrm Control into your Form."
+         ForeColor       =   &H80000001&
+         Height          =   255
+         Left            =   480
+         TabIndex        =   1
+         Top             =   360
+         Width           =   5175
+      End
+   End
+End
+Attribute VB_Name = "General"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+

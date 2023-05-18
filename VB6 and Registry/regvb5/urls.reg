@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE]
+
+"FullLogging"="No"
+"IE State"=&H0 (0)

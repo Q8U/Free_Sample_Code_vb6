@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>Sorry!  File not found.</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<CENTER><IMG SRC="http://galaxy.execpc.com/Graphics/ExecPC.gif" WIDTH=431 HEIGHT=123 ALT="ExecPC"></CENTER>
+<H2>File Not Found.</H2><BR>
+The file you have requested could not be found on the ExecPC servers.  If you are looking for information on
+ExecPC check out our web site at <A HREF="http://home.execpc.com/">http://home.execpc.com</A>.
+<BR><BR>
+If you require further assistance with finding a page on this server please consult the ExecPC TechWeb at
+<A HREF="http://home.execpc.com/TechWeb">http://home.execpc.com/TechWeb</A>.
+<BR><BR>
+<B>Tips For Finding The Right File</B>
+<UL>
+<LI>Most of our user web pages will be proceeded by a tilde (~) character.<BR>
+<B><I>Example:</I></B> The web page for account <I>joediner</I> would be found at: http://www.execpc.com/~joediner
+<LI>File URLs are Case Sensitive.  Most of the URL should be in all lower case letters but names of HTML pages
+will vary by the naming conventions used by their authors.
+</UL>
+</BODY>
+</HTML>

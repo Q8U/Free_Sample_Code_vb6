@@ -1,0 +1,42 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.dll]
+@="dllfile"
+
+[HKEY_CLASSES_ROOT\dllfile\shell]
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Register]
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Register\command]
+@="c:\\windows\\system\\regsvr32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Un-Register]
+
+[HKEY_CLASSES_ROOT\dllfile\shell\Un-Register\command]
+@="c:\\windows\\system\\regsvr32.exe /u \"%1\""
+
+[HKEY_CLASSES_ROOT\.ocx]
+@="ocxfile"
+
+[HKEY_CLASSES_ROOT\ocxfile\shell]
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Register]
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Register\command]
+@="c:\\windows\\system\\regsvr32.exe \"%1\""
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Un-Register]
+
+[HKEY_CLASSES_ROOT\ocxfile\shell\Un-Register\command]
+@="c:\\windows\\system\\regsvr32.exe /u \"%1\""
+
+[HKEY_CLASSES_ROOT\QuickView\.DLL]
+@="Dynamic Link Libraries"
+
+[HKEY_CLASSES_ROOT\QuickView\.DLL\{F0F08735-0C36-101B-B086-0020AF07D0F4}]
+@="SCC Quick Viewer"
+
+[HKEY_CLASSES_ROOT\QuickView\.OCX]
+
+[HKEY_CLASSES_ROOT\QuickView\.OCX\{F0F08735-0C36-101B-B086-0020AF07D0F4}]
+@="SCC Quick Viewer"

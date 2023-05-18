@@ -1,0 +1,14 @@
+Register It By Jamie Pocock : micracom2@hotmail.com 
+
+ 'The registar dll came from the web and was
+ 'written by Chris Roebuck. I have wrote the rest of the program.
+    Useing this code you are able to register
+ole,s......dll,s....ocx,s you find on the beloved W.W.W.
+  'If you have any questions please feel free to email
+      me at micracom2@hotmail.com my names jamie.
+      p.s the coding is simple so I felt there was
+      'little need to add explanation statements.
+
+This is a vast improvement of my program I posted last mouth
+Please ensure the dlls supplied are in your windows\system directory
+Have fun.

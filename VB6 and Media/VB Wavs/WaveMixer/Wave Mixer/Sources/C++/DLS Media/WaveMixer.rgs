@@ -1,0 +1,26 @@
+HKCR
+{
+	WaveMixer.WaveMixer.1 = s 'WaveMixer Class'
+	{
+		CLSID = s '{94326DCC-A647-497C-B2C4-69692A014513}'
+	}
+	WaveMixer.WaveMixer = s 'WaveMixer Class'
+	{
+		CLSID = s '{94326DCC-A647-497C-B2C4-69692A014513}'
+		CurVer = s 'WaveMixer.WaveMixer.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {94326DCC-A647-497C-B2C4-69692A014513} = s 'WaveMixer Class'
+		{
+			ProgID = s 'WaveMixer.WaveMixer.1'
+			VersionIndependentProgID = s 'WaveMixer.WaveMixer'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{1B613114-6B19-4101-8A89-C1D6FD2E7639}'
+		}
+	}
+}

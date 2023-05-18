@@ -1,0 +1,11 @@
+Release 1.3
+    Now takes WAV files names and options from the command line and
+        automatically performs WAV-to-MP3 encoding.
+    Fixed a problem that causes the encoding options to be improperly
+        set at startup.
+
+Release 1.2
+    - Fixed a problem with 'device-change' messages that the
+      MP3 Maker receives from network events. 
+    - A 'continuous play' option has been added to the MP3 Player.
+

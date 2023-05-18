@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>EQPro 1.5 Documentation : Methods</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<!--webbot bot="Include" u-include="menu.htm" tag="BODY" startspan -->
+
+<table border="0" width="100%" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="83%" align="center" bgcolor="#000000" colspan="6">
+      <p align="left"><font face="Tahoma" size="3" color="#FFFFFF"><b>&nbsp;
+      EQPro 1.5 Documentation</b></font></td>
+  </tr>
+  <tr>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="index.html" class="MenuItm">Introduction</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="properties.htm" class="MenuItm">Properties</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="methods.htm" class="MenuItm">Methods</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="events.htm" class="MenuItm">Events</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="constants.htm" class="MenuItm">Constants</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="codesamples.htm" class="MenuItm">Code
+      Samples</a></b></font></td>
+  </tr>
+</table>
+
+<!--webbot bot="Include" endspan i-checksum="9903" -->
+<p><font size="2" face="Tahoma"><b><a name="FindLines"></a>FindLines(</b><i>ReturnType
+As <a href="constants.htm#ReturnTypeConstants">ReturnTypeConstants</a>,
+[LineName As String], [Hold As Boolean]</i><b></b><b>) </b>As Variant</font></p>
+<blockquote>
+  <p><font size="2" face="Tahoma">Taking a partial string as the line name to
+  look for, returns information about every matching line.</font></p>
+  <p><font size="2" face="Tahoma">The first call to the function should include
+  a complete or partial LineName.<br>
+  Successive calls will return every possible match.<br>
+  Once you have found the line you were looking for, you can get all the
+  information about that line by changing the ReturnType value and making the
+  Hold value True. When the Hold parameter is True, FindLines will return the
+  information requested about the last found line.<br>
+  The function will return a blank string when no more matches are found.</font></p>
+  <p><font size="2" face="Tahoma">For example, to look for the ID of the Bass
+  control, you should try this code:</font></p>
+  <blockquote>
+    <pre>Dim <font color="#000000">LineName</font> As String
+Dim <font color="#000000">BassID</font> As Long
+
+<font color="#000000">LineName = EQProCtrl.FindLines(rtName, &quot;Bass&quot;)</font>
+If <font color="#000000">LineName &lt;&gt; &quot;&quot;</font> Then
+	<font color="#000000">BassID = EQProCtrl.FindLines(rtID, LineName)</font>
+End If</pre>
+  </blockquote>
+  <p><font face="Tahoma" size="2">Another common situation would be to look for
+  the Master Volume control. This code should do the work:</font></p>
+  <blockquote>
+    <pre>Dim <font color="#000000">LineName</font> As String
+Dim <font color="#000000">MasterVolID</font> As Long</pre>
+    <pre><font color="#000000">LineName = EQProCtrl.FindLines(rtName, &quot;Volume&quot;)</font>
+Do Until <font color="#000000">LineName = &quot;&quot;</font> Or <font color="#000000">InStr(LineName, &quot;Master&quot;) &gt; 0
+	LineName = EQProCtrl.FindLines(rtName)</font>
+Loop
+If <font color="#000000">LineName &lt;&gt; &quot;&quot;</font> Then
+	<font color="#000000">MasterVolID = EQProCtrl.FindLines(rtID, LineName)</font>
+End If</pre>
+  </blockquote>
+  <p><font face="Tahoma" size="2">Please note that this code is just a sample of
+  how to use the FindLine function... in case your application needs to find the
+  Master Volume control, this line is always the first line in the <a href="properties.htm#OutputLineID">OutputLineID</a>
+  array.</font></p>
+  <p><font face="Tahoma" size="2">Another common situation would be to look for
+  the input line ID of the Microphone line. Here's how, using the FindLine
+  function:</font></p>
+  <blockquote>
+    <pre>Dim <font color="#000000">LineName</font> As String
+Dim <font color="#000000">MicID</font> As Long
+Dim <font color="#000000">LineDir</font> As <font color="#000000">DirectionConstants</font>
+
+<font color="#000000">LineName = EQProCtrl.FindLines(rtName, &quot;Mic&quot;)
+LineDir = EQProCtrl.FindLines(rtDirection, LineName)
+</font>Do Until <font color="#000000">LineName = &quot;&quot;</font> Or <font color="#000000">LineDir = dInput</font>
+	<font color="#000000">LineDir = EQProCtrl.FindLines(rtDirection)</font>
+Loop
+If <font color="#000000">LineName = &quot;&quot;</font> Then
+	<font color="#008000">'We should raise an error, since this means that
+	'the installed mixer device does not have an
+	'input microphone line
+</font>Else
+	MicID = <font color="#000000">EQProCtrl.FindLines(rtID, , </font>True<font color="#000000">)</font>
+End If</pre>
+  </blockquote>
+  <p><font face="Tahoma" size="2">Please note that for these samples to work you
+  must properly initialize the EQPro control, using the <a href="#IniEQ">InitEQ</a>
+  method and <a href="properties.htm#ActiveMixer">select the mixer device</a> to
+  which the EQPro should be bound to.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><b><font face="Tahoma" size="2"><a name="IniEQ"></a>IniEQ()</font></b></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">This method initializes the control and
+  prepares it to start working.</font></p>
+  <p><font face="Tahoma" size="2">You should call this method before using any
+  other property or method.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>SetAdvancedLinesValues(</b><i>idx As Integer,
+NewValue As Long</i><b>)</b></font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets a new value to the advanced line
+  addressed by the idx value.</font></p>
+  <p><font face="Tahoma" size="2">before calling this method, you should check
+  the <a href="properties.htm#AdvancedLinesRange">valid range of values</a> this
+  line can accept.</font></p>
+</blockquote>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

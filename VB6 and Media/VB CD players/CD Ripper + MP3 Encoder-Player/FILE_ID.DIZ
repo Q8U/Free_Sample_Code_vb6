@@ -1,0 +1,22 @@
+SIMPLE - SImple MP3 PLayer and Encoder
+http://www.geocities.com/simplelance
+simplelance@hotmail.com
+Free CD Ripper, MP3 Encoder and MP3 Player
+Release 1.3
+CD Ripper (v 1.0g)
+ - Jitter correction 
+ - Recording of multiple CD tracks 
+ - Support for multiple drives
+ - Rip to WAV or MP3
+MP3 Encoder (v 1.1)
+ - Encodes CD audio or WAV
+ - Very High-Quality VBR Option
+ - Very Fast
+MP3 Player (v 0.8c)
+ - Powerful playlist manager
+ - Supports ID3 tags
+ - Configurable display ("skins")
+ - 12-band graphic equalizer
+Requirements
+ - Win95/98
+ - WinNT (with ASPI for CD ripping)

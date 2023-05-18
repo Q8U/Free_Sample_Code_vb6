@@ -1,0 +1,96 @@
+'Add the following declaration to the General Declarations section of a Module
+
+Declare Function sndPlaySound Lib "winmm.dll" Alias "sndPlaySoundA" (ByVal lpszSoundName As String, ByVal uFlags As Long) As Long
+Public Declare Function waveOutGetNumDevs Lib "winmm" () As Long
+
+Global Const SND_SYNC = &H0 'just after the sound is ended exit function
+Global Const SND_ASYNC = &H1 'just after the beginning of the sound exit function
+Global Const SND_NODEFAULT = &H2 'if the sound cannot be found no error message
+Global Const SND_LOOP = &H8 'repeat the sound until the function is called again
+GLOBAL Const SND_NOSTOP = &H10 'if currently a sound is played the function will return without playing the selected sound
+
+Global Const Flags& = SND_ASYNC Or SND_NODEFAULT
+
+'Add the following code to the Command1_Click event on a form:
+
+Private Sub Command1_Click()
+'Add the following code to the Command1_Click event:
+
+    Dim i As Long
+    Const SoundFileName$ = "c:\sb16\samples\s_16_44.wav"
+
+    i = waveOutGetNumDevs()
+    If i > 0 Then   'There is at least one sound device.
+	i& = sndPlaySound(SoundFileName$, Flags&) 
+    Else
+      Beep
+    End If
+
+End Sub
+
+
+-------------------- an other good example!! ---------------------
+
+
+            Thönk              
+       hellfyre on IRC         
+       thonk@radix.net         
+  http://www.radix.net/~thonk  
+
+
+Insert a Module into the app and add these lines:
+
+Option Explicit
+Declare Function sndPlaySound Lib "winmm" Alias _
+	"sndPlaySoundA" (ByVal lpszSoundName As String, _
+	ByVal uFlags As Long) As Long
+	
+' flag values for uFlags paramaeter
+Public Const SND_SYNC = &H0
+Public Const SND_ASYNC = &H1
+Public Const SND_NODEFAULT = &H2
+Public Const SND_MEMORY = &H4
+Public Const SND_LOOP = &H8
+Public Const SND_NOSTOP = &H10
+
+
+After the Module is made, go back to the app and open the code window
+for Form1, You should see  "Option Explicit" as the first line of code
+(this makes sure that all variables are defined before they are
+implemented). If it does not say "Option Explicit", then go into the
+Tools\Options\Enviroment  menu and make sure the "Require variable
+declaration" is checked.
+
+Now, to get the wav file to play for use with a 'command button
+click':
+
+
+Private Sub Command1_Click()
+Dim rc As String
+	rc = sndPlaySound("c:\windows\chime.wav", SND_SYNC)
+	' Leave the parentheses and the quotes and insert the file
+	' path to your wav file.
+    	' SND_SYNC is used when ya want the whole sound to
+	' play before going to the next step,
+    	' In other words, end user can't continue til it's done.
+    	' Replacing that with SND_ASYNC let's them contiue
+	' while the sound is playing.
+    	' Using SND_ASYNC + SND_LOOP will make the sound
+	' continuously play and let the user continue on.
+End Sub
+
+
+To make the sound play on app startup:
+
+
+Private Sub Form_Load()
+Dim rc As String
+    rc = sndPlaySound("d:\music\sounds\bassman1.wav", SND_ASYNC)
+    	' SND_ASYNC let's them  app continue loading while the sound
+	' is playing.
+    	' Using SND_ASYNC + SND_LOOP will make the sound continuously
+	' play during the entire runtime of the app.
+End Sub
+
+
+

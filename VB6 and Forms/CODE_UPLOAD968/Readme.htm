@@ -1,0 +1,117 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><font color="#0000FF" size="5" face="Arial"><em><strong>Image
+Shaped Form Example Readme!</strong></em></font></p>
+
+<p align="center">&nbsp;</p>
+
+<table border="0" cellpadding="3" width="100%">
+    <tr>
+        <td colspan="2"><font color="#FF0000" face="Arial"><em><strong>Regardments
+        to this Example</strong></em></font></td>
+    </tr>
+    <tr>
+        <td width="80">&nbsp;</td>
+        <td><font face="Arial"><em><strong>To execute this
+        example you will need the COMDLG32.OCX file, that
+        contains the support for the Open File and Colour Picker
+        windows used by the program.</strong></em></font><p><font
+        face="Arial"><em><strong>Even so, you only need it to see
+        this example and not if you want to create your own Image
+        Shaped Forms!</strong></em></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><font color="#FF0000" face="Arial"><em><strong>What
+        your going to learn with this Example</strong></em></font></td>
+    </tr>
+    <tr>
+        <td width="80">&nbsp;</td>
+        <td><ul type="disc">
+            <li><font face="Arial"><em><strong>How to create your
+                own Image Shaped Forms.</strong></em></font></li>
+            <li><font face="Arial"><em><strong>How to use some of
+                the options provided by the Microsoft Common
+                Dialog Control.</strong></em></font></li>
+            <li><font face="Arial"><em><strong>How to create a
+                Form that can be moved from any part of it (not
+                just the Title Bar), using some API functions.</strong></em></font></li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><font color="#FF0000" face="Arial"><em><strong>Creating
+        your own Image Shaped Forms</strong></em></font></td>
+    </tr>
+    <tr>
+        <td width="80">&nbsp;</td>
+        <td><font face="Arial"><em><strong>If you want to create
+        your own Image Shaped Forms then you just need to add the
+        Module1.bas file to your project and follow these
+        step-by-step instructions for each Shaped Form!</strong></em></font><p><font
+        face="Arial"><em><strong>After adding Module1.bas file to
+        your project, set the Background Picture Property of the
+        future shaped form and set it's BorderStyle Property to
+        &quot;0 - None&quot;. Remember: the smaller the image,
+        the faster it is scanned and the faster is the shape
+        created.</strong></em></font></p>
+        <p><font color="#FF0000" face="Arial"><em><strong>Attention:</strong></em></font><font
+        face="Arial"><em><strong> Be sure to set the forms
+        dimensions equal or bigger that of the Background Picture
+        dimensions. If you don't, the shape won't be right.</strong></em></font></p>
+        <p><font face="Arial"><em><strong>Now add the following
+        line to the declarations (the top) of your form:</strong></em></font></p>
+        <p><font color="#000080" face="Arial"><code>Private</code></font><font
+        face="Arial"><code> hRgn </code></font><font
+        color="#000080" face="Arial"><code>as Long</code></font></p>
+        <p><font face="Arial"><em><strong>Then add the following
+        lines to the Form_Load() event:</strong></em></font></p>
+        <p><font face="Arial"><code>hRgn =
+        GetBitmapRegion(Me.Picture, TransparentColor)<br>
+        SetWindowRgn Me.hwnd, hRgn, </code></font><font
+        color="#000080" face="Arial"><code>True</code></font></p>
+        <p><font color="#FF0000" face="Arial"><em><strong>Attention:</strong></em></font><font
+        face="Arial"><em><strong> remember to replace the
+        TransparentColor variable on the previous line by the
+        colour that will be &quot;removed&quot; from the Image,
+        creating the new Shape.</strong></em></font></p>
+        <p><font face="Arial"><em><strong>Finally, add the
+        following line to the Form_Unload() event:</strong></em></font></p>
+        <p><font face="Arial"><code>DeleteObject hRgn</code></font></p>
+        <p><font color="#FF0000" face="Arial"><em><strong>Attention:</strong></em></font><font
+        face="Arial"><em><strong> the previous line of code MUST
+        be executed before closing the form; it will allow VB to
+        free the allocated memory by the created Shape.</strong></em></font></p>
+        <p><font face="Arial"><em><strong>If you also want to
+        freely move your Image Shaped Form from any point of it
+        (since it has no Title Bar that would allow it to be
+        moved), add the following lines to the Form_MouseDown()
+        event:</strong></em></font></p>
+        <p><font face="Arial"><code>ReleaseCapture<br>
+        SendMessage Me.hwnd, WM_NCLBUTTONDOWN, HTCAPTION, 0&amp;</code></font></p>
+        </td>
+    </tr>
+</table>
+
+<p><font face="Arial"><em><strong>Programmed by Pedro Lamas<br>
+Copyright ©1997-1999 Underground Software</strong></em></font></p>
+
+<p><font face="Arial"><em><strong>Home-Page (Dedicated to VB): </strong></em></font><a
+href="http://www.terravista.pt/portosanto/3723/"><font
+face="Arial"><em><strong>www.terravista.pt/portosanto/3723/</strong></em></font></a><font
+face="Arial"><em><strong><br>
+E-Mail: </strong></em></font><a href="mailto:sniper@hotpop.com"><font
+face="Arial"><em><strong>sniper@hotpop.com</strong></em></font></a></p>
+</body>
+</html>

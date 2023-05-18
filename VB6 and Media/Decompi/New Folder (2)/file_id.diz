@@ -1,0 +1,11 @@
+Advanced ZIP Password Recovery 2.44 [ASP]
+-----------------------------------------
+Forgot your ZIP password? Don't worry, this
+utility may help you to guess it. The
+program uses the "brute-force" attack, based
+on the options you set (minumum/maximum
+password len, character set, password mask);
+dictionary-based attack is also available.
+All ZIP versions and methods are supported.
+The performance is more than one million
+passwords per second (on Pentium II).

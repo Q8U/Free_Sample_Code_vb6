@@ -1,0 +1,67 @@
+<HTML>
+<BODY BGCOLOR="FFFFFF">
+<H2>ActiveDNS 1.0</H2>
+<B>Copyright 1998 by Activity Software</B> (<A HREF="http://www.activitysoft.com/">http://www.activitysoft.com/</A>)<BR>
+<B>Released:</B> 08/25/98<BR>
+For more information on this and other products visit <A HREF="http://www.activitysoft.com">Activity's Product Page</A>.<BR>
+
+
+<H3>Description</H3>
+ActiveDNS performs basic DNS functionality.  This is a COM object that can be used from any COM aware application.  It can be used from ASP, Visual Basic, or Windows Scripting Host.
+
+<H3>New Features</H3>
+<I>Version 1.0</I>
+<UL>
+<LI>Determine whether an IP Address is a valid Numeric IP Address
+<LI>Resolve a DNS name to an IP Address
+<LI>Reverse Resolve an IP Address to its DNS name
+</UL>
+
+<H3>Installation</H3>
+Copy ActiveDNS.DLL to the &lt;WINDIR&gt;\SYSTEM32 directory and run:<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<I>regsvr32.exe &lt;WINDIR&gt;\SYSTEM32\ActiveDNS.DLL</I>
+
+<H3>Properties</H3>
+<I>This object has no properties.</I>
+
+<H3>Methods</H3>
+
+<B>boolean IsValidNumericAddress(<I>IP Address</I>)</B><BR>
+Determines whether the provided IP Address is in the proper format and contains reasonable data.  Returns <I>true</I> if IP Address is in the proper format; otherwise returns <I>false</I>.
+<P>
+<B>String Resolve(<I>DNS Address</I>)</B><BR>
+Takes a DNS name (such as <I>www.microsoft.com</I>), and returns the associated IP address.  If no IP address can be resolved, returns an Empty String.
+<P>
+<B>String ReverseResolve(<I>IP Address</I>)</B><BR>
+Takes an IP address and finds the DNS name (such as <I>www.microsoft.com</I>).  If no DNS hostname can be resolved, returns the IP address it is passed.
+
+<H3>Example</H3>
+<BLOCKQUOTE>
+
+<PRE>
+&lt;%@ LANGUAGE="VBSCRIPT" %&gt;
+
+&lt;%
+Set dns = Server.CreateObject("ActiveDNS.Resolve")
+
+Address = "127.0.0.1"
+Hostname = "localhost"
+
+If dns.IsValidNumericAddress(Address) Then
+ Response.Write Address & " Is a valid numeric address.&lt;BR&gt;"
+Else
+ Response.Write Address & " Is not a valid numeric address.&lt;BR&gt;"
+End If
+
+Response.Write "Host: " & Hostname & " resolves to address: " & _
+                            dns.Lookup(Hostname) & "&lt;BR&gt;"
+
+Response.Write "Address: " & Address & " resolves to host: " & _ 
+                            dns.ReverseLookup(Address)  & "&lt;BR&gt;"
+
+%&gt;
+</PRE>
+</BLOCKQUOTE>
+
+</BODY>
+</HTML>

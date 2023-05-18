@@ -1,0 +1,164 @@
+Advanced ZIP Password Recovery: versions history
+================================================
+
+! bug fixed
++ improvement/modification
+
+2.44 (05/10/99) ! dictionary attack (empty strings in dictionary)
+                ! calculating number of words in dictionary
+                ! open project -> cancel: all settings being cleared
+                + hot keys:
+                  F1  - Help
+                  F2  - Save setup
+                  F3  - Open ZIP file
+                  F4  - Edit charset
+                  F9  - Start
+                  F10 - Stop
+                + remember path where the files (project, archive
+                  and dictionary) have been opened from
+                + error message if project file is not found
+                + *.txt as an additional selection for dictionary files
+
+2.43 (21/09/99) + improved interface (some cosmetic changes)
+                ! recovering passwords for some specific archives
+                ! working with very large archives
+
+2.42 (23/08/99) + better performance (brute-force attack)
+                ! crash on some SFX-archives
+                ! recovering passwords for some specific archives
+
+2.41 (18/08/99) ! brute-force attack: when mininum and maximum password
+                  length are different, and maximum length is even
+                ! handling the situation when log file cannot be created
+                  for some reason
+
+2.4 (06/08/99)  ! creating log file when the program is executed
+                  from the disk root
+                ! recovering passwords for some archives with non-standard
+                  format
+                ! crash on some SFX-archives
+                + major performance improvements for ZIP 2.x files:
+                  80-90% better speed on P6 (Pentium II and Pentium Pro)
+                  30-40% better speed on P5 (Pentium and Pentium MMX)
+                + performance improvements for ZIP 1.x files --
+                  now about 30% faster
+
+
+2.31 (29/06/99) ! processing archives without encrypted files
+                ! processing some SFX-archives
+                ! mask attack: "invalid starting password"
+                ! selecting the fastest file to try
+                + option: progress bar update interval
+
+2.3 (18/06/99)  ! recovering the passwords for some "non-standard" zip
+                  files (which use undocumented features)
+                ! crash on some specific archives
+                ! memory leaks
+                + much better speed on archives containing one
+                  encrypted file only
+                + better speed on PKZIP 1.x archives
+                + more convenient user interface
+                + status window
+                + selecting auto-save directory and file name
+                + "brute force with mask" attack
+                + displaying elapsed time
+                + displaying remaining time
+                + displaying average speed
+                + displaying detailed statistics when recovering process 
+                  is completed
+                + high-precision timer
+                + logging to file
+                + saving all options between sessions (as default)
+                + log file and status window: message about adjusting the
+                  password length after stop/resume
+                + log file and status window: message about the last-checked
+                  password on stop
+
+2.2 (03/02/99)  ! processing archives with subfolders
+                  (password not found, wrong password or
+                  crashing)
+                ! dictionary attack problems (password not found)
+                ! running dictionary attack when no brute-force
+                  options are selected
+                ! "start from .." functionality
+                ! a few memory leaks
+                ! crash on some archives
+                ! selecting both attack types (brute-force and
+                  dictionary) at a time
+                + improved user interface
+                + better performance on archives with 2 or more
+                  encrypted files (about 10% increase)
+                + autosaving the ini-file into the same folder,
+                  where the source archive is located
+                + saving all options into ini-file (type of attack,
+                  dictionary options etc)
+                + "convert to OEM" as an option
+                + updating progress bar according to "start from .."
+                  value
+                + "minimize to tray" option
+
+2.1 (15/01/99)  ! serious memory allocation problem
+                ! open the dictionary file if the full
+                  patth is not entered
+                ! selecting the space (" ") in the character
+                  set separately, not in the "special chars"
+                + improved "Custom charset" dialog
+                + more characters for "Custom charset"
+                + increased performance:
+                    for 30..200% on stored files
+                    for 20..30% on inflated files
+                + all national symbols support
+                + more statistics and current password during
+                  recovery
+                + SFX archive type (*.exe) in open dialog
+                + smarter selection of the fastest file (to try
+                  the password on)
+
+2.0 (27/11/98)  ! crash on some archives compressed with
+                  Deflat:N method
+                + Windows user interface
+                + installation program
+                + "custom" character set
+                + performance optimizations
+                + selecting the fastest (encrypted) file in
+                  archive to crack
+                + read/save setup
+
+0.93 (19/02/98) ! memory leaks
+                ! password for some archives fith Deflat:N method
+                ! dictionary-based attack for some archives
+                ! password for files with very long path names
+                ! dictionary-based attack: garbage text on exit
+                ! wrond message if dictionary file is missed
+                ! deleting resume-file on exit
+                ! saving password for dictionary-based attack
+                + dictionary-based attack: up/low first letter only
+                + interrupting dictionary-based attack
+                + updating resume-file (options and current
+                  password) periodically
+
+0.92a(06/02/98) ! cracking some specific ZIP archives
+
+0.92 (02/02/98) ! displaying benchmark results for very large numbers
+                + performance increased in about 1.5 times
+                  (when single file is in archive)
+                + added ' ' (space) to "custom charset"
+                + benchmark: total number of passwords, 
+                  passwords per sec/min/hour
+                + saving the password into the .psw file
+                  (for future reference)
+                + working with self-extracting and disk-spanned archives
+                + displaying large numbers according to locale settings
+                  (for benchmark only)
+                + working in background
+                + pause between exit
+                + default dictionary file name: "dic.txt"
+                + registration: input dialog
+
+0.91a(05/01/98) ! crashing on some machines
+
+0.91 (30/12/97) ! parsing command line
+                ! leaving temporary files in current directory
+                + dictionary-based attack
+
+0.90 (25/12/97) original version

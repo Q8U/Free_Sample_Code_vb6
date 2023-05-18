@@ -1,0 +1,14 @@
+d2 Register/Unregister DLLOCX 2.0 for Windows 95/NT 4.0/2000
+
+If you are developing ActiveX .Dll or .OCX, you totally know 
+"REGSVR32.EXE" isn't part of RAD at all.
+
+With d2 Register/Unregister DLLOCX it's much quicker: 
+Simply right-click an OCX or DLL file and select "Register control"/
+"Unregister control" (for OCX files) or "Register library"/"Unregister
+library" (for DLL files) from the appearing menu. These commands will
+call "REGSVR32.EXE", so you don't have to type it yourself.
+
+d2 Register/Unregister DLLOCX 2.0 is Updated Freeware.
+
+

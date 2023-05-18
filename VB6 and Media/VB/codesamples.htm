@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>EQPro 1.5 Documentation : Methods</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<!--webbot bot="Include" u-include="menu.htm" tag="BODY" startspan -->
+
+<table border="0" width="100%" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="83%" align="center" bgcolor="#000000" colspan="6">
+      <p align="left"><font face="Tahoma" size="3" color="#FFFFFF"><b>&nbsp;
+      EQPro 1.5 Documentation</b></font></td>
+  </tr>
+  <tr>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="index.html" class="MenuItm">Introduction</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="properties.htm" class="MenuItm">Properties</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="methods.htm" class="MenuItm">Methods</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="events.htm" class="MenuItm">Events</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="constants.htm" class="MenuItm">Constants</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="codesamples.htm" class="MenuItm">Code
+      Samples</a></b></font></td>
+  </tr>
+</table>
+
+<!--webbot bot="Include" endspan i-checksum="9903" -->
+<p><font face="Tahoma" size="2">Probably the most useful feature of EQPro is the
+hardest one to understand, the FindLine function.</font></p>
+<p><font face="Tahoma" size="2">Here're some helpful samples from real
+situations that users of EQPro have encountered.<br>
+About 80% of this situations can be solved using the FindLine function.<br>
+For more basic samples on using this function, please refer to the description
+its <a href="methods.htm#FindLines">description</a>.</font></p>
+<p><font face="Tahoma" size="2"><b>Let's say we want to fill a list combo with
+all the lines that support muting and are of type faders (i.e. volume controls).</b></font></p>
+<blockquote>
+  <pre>Do Until <font color="#000000">ucEQPro1.FindLines(rtName) = &quot;&quot;</font>
+	If <font color="#000000">ucEQPro1.FindLines(rtType, , True) = ltFader</font> And _
+		<font color="#000000">ucEQPro1.HasMute(ucEQPro1.FindLines(rtID, , </font>True<font color="#000000">))</font> Then
+		With <font color="#000000">Combo1
+			.AddItem IIf(ucEQPro1.FindLines(rtDirection, , </font><font color="#000080">True</font><font color="#000000">) = dOutput, _
+                        &quot;(Output) &quot;, _
+                        &quot;(Input) &quot;) + _
+                        ucEQPro1.FindLines(rtName, , </font><font color="#000080">True</font><font color="#000000">)
+			.ItemData(.NewIndex) = ucEQPro1.FindLines(rtID, , </font><font color="#000080">True</font><font color="#000000">)</font>
+		End With
+	End If
+	<font color="#000000">LineName = ucEQPro1.FindLines(rtName)</font>
+Loop</pre>
+  <p><font face="Tahoma" size="2">Try removing the statement that checks whether
+  is the line supports muting. You'll get all the lines that are of type faders.
+  This should be a good exercise.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><b><font face="Tahoma" size="2">Maybe, the most common situation is: How can
+I make the Microphone the default recording source?</font></b></p>
+<blockquote>
+  <pre><font color="#000000">ucEQPro1.FindLines rtName, &quot;Mic&quot;
+</font>Do Until <font color="#000000">ucEQPro1.FindLines(rtName, , </font>True<font color="#000000">) = &quot;&quot;</font>
+	If <font color="#000000">ucEQPro1.FindLines(rtDirection, , </font>True<font color="#000000">) = dInput</font> Then
+		<font color="#000000">ucEQPro1.ActiveLine = ucEQPro1.FindLines(rtID, ,</font> True<font color="#000000">)</font>
+		<font color="#000000">ucEQPro1.SelectForRecording = </font>True
+		Exit Do
+	End If
+	<font color="#000000">ucEQPro1.FindLines rtName</font>
+Loop</pre>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2">Please keep checking the <a href="http://software.xfx.net/activex/eq/help/index.html">online</a>
+version of this documentation for further additions to this section.<br>
+If you have tried to use the EQPro control to do something and you haven't found
+how to do it, please <a href="mailto:prgsupport@xfx.net">let me know</a>. I'll
+try to find a solution and I'll post it here.</font></p>
+
+</body>
+
+</html>

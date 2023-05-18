@@ -1,0 +1,68 @@
+;Setup for d2 Register/Unregister DLLOCX 2.0
+;
+;
+;To install, click this file with your RIGHT mousebutton (Explorer)
+;and select "Install".
+;
+;To uninstall: Go to Control Panel|Software|d2 Register/Unregister DLLOCX 2.0
+;and click "Remove".
+;
+;Please see README.TXT also.
+;
+[Version]
+signature="$chicago$"
+
+[DefaultInstall]
+CopyFiles=Files.inf,Files.Add
+AddReg=Registry.Add,Registry.Uninstall
+
+[DefaultInstall.ntx86]
+CopyFiles=Files.inf,Files.Add
+AddReg=Registry.Add,Registry.Uninstall.NT
+
+[DefaultUninstall]
+DelFiles=Files.inf,Files.Add
+DelReg=Registry.Add,Registry.Uninstall,Registry.Uninstall.NT
+
+[SourceDisksNames]
+1="%01%",,1
+
+[DestinationDirs]
+Files.Inf=17
+Files.Add=10
+
+[Files.Inf]
+DLLOCXReg.inf
+
+[Files.Add]
+Regsvr32.exe,Regsvr32.ex_
+
+[Registry.Uninstall]
+HKLM,%UnInstallPath%,DisplayName,,%UninstallDispName%
+HKLM,%UnInstallPath%,UninstallString,,"%10%\rundll.exe setupx.dll,InstallHinfSection DefaultUninstall 132 %17%\%InfFile%"
+
+[Registry.Uninstall.NT]
+HKLM,%UnInstallPath%,DisplayName,,%UninstallDispName%
+HKLM,%UnInstallPath%,UninstallString,,"%11%\rundll32.exe setupapi,InstallHinfSection DefaultUninstall 132 %17%\%InfFile%"
+
+[Registry.Add]
+HKCR,.ocx\shell\d2RegOCX,,,"%PopupDescRegOCX%"
+HKCR,.ocx\shell\d2RegOCX\command,,,"regsvr32 %1"
+HKCR,.ocx\shell\d2UnRegOCX,,,"%PopupDescUnregOCX%"
+HKCR,.ocx\shell\d2UnRegOCX\command,,,"regsvr32 /u %1"
+HKCR,dllfile\shell\d2RegDLL,,,"%PopupDescRegDLL%"
+HKCR,dllfile\shell\d2RegDLL\command,,,"regsvr32 %1"
+HKCR,dllfile\shell\d2UnRegDLL,,,"%PopupDescUnregDLL%"
+HKCR,dllfile\shell\d2UnRegDLL\command,,,"regsvr32 /u %1"
+
+[Strings]
+InfFile="DLLOCXReg.inf"
+SetupRegPath="Software\Microsoft\Windows\CurrentVersion\Setup"
+PopupDescRegOCX="Re&gister control"
+PopupDescUnregOCX="&Unregister control"
+PopupDescRegDLL="Re&gister library"
+PopupDescUnregDLL="&Unregister library"
+UninstallDispName="d2 Register/Unregister DLLOCX 2.0"
+UnInstallPath="Software\Microsoft\Windows\CurrentVersion\Uninstall\d2 Register/Unregister DLLOCX 2.0"
+
+;Copyright © 2001 d2, All Rights Reserved

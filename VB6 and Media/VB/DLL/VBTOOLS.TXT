@@ -1,0 +1,33 @@
+More Visual Basic Tools by Aivosto Oy
+-------------------------------------
+
+* Project Analyzer shows the structure of a project graphically, and
+  lets you browse your code as hypertext. It detects problems, like unused
+  variables, dead code, missing variable types, name conflicts, and events
+  missing code. It also provides several software engineering metrics.
+
+* DBtoVB Wizard generates code for creating a new database "skeleton". It
+  reads the structure of an existing database and makes the code for your
+  "File|New database" function.
+
+* DB Lock monitors the lock status of your Access database. See how your
+  database application behaves in a multiuser situation. You can also
+  manually lock tables for testing purposes.
+
+* RegExpr for VB is a regular expressions library for parsing strings.
+  Full support for all regular expression features (Perl, egrep etc.
+  syntax).
+
+* Eval for VB is an expression evaluator library. Calculates all
+  expressions that are accepted in VB's compiler constants. Useful for
+  calculating formulas given by user.
+
+* LinkGraph OCX displays graphs. Easy to use for building tree structures.
+
+
+To find demos of these professional Visual Basic tools, point your
+browser to VBShop! 
+
+http://www.aivosto.com/vb.html
+vbshop@aivosto.com
+

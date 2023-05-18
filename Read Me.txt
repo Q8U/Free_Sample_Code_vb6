@@ -1,0 +1,15 @@
+Samples codes may have copyrights.
+
+A few are written by myself but most are from around the world from sites such as 
+http://www.Planetsourcecode.com, 
+http://msdn.microsoft.com/,
+http://www.coderoom.com,
+http://visualbasic.ittoolbox.com/, 
+http://p2p.wrox.com 
+and lots more
+
+public by :
+www.parsicoders.com
+www.pxr.ir
+
+

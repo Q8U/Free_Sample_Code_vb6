@@ -1,0 +1,394 @@
+Project Analyzer - Version history
+==================================
+
+
+Major differences       v5.x             v4.2             v3.1
+----------------------  ---------------  ---------------  --------------- 
+Supported VB versions   3-6              3-5              3-4
+Windows versions        Win 95/NT        Win 95/NT        Win 3.x
+Add-ins                 SuperPA,         SuperPA,         SuperPA, 
+                        PPrinter, PGraph PPrinter, PGraph PPrinter
+Saving of analysis      Yes              No               No
+
+
+
+Major new features in v5.1, compared to v5.0:
+* New customizable Problem detection feature
+* New cross-reference report
+
+
+
+Detailed Version History
+========================
+
+v5.1.04 October 1999
+        *** New features ***
+        1. Project Printer now generates a set of HTML files for 
+           on-line code surfing. You can also publish your code on 
+           your Intranet or the Internet.
+        2. Comment directive syntax changed. Added support for most 
+           problem types. Dropped support for $USED PARAM.
+
+        *** Features improved ***
+        1. Added printer setup dialog to Project Graph to enable 
+           horizontal printing and other printing options.
+        2. Comment manual does not contain Comment directives
+
+        *** Bug fixes ***
+        1. Functions that return an array are no longer reported as
+           missing a type (James Pragit)
+        2. Fixed comment calculations in Design Quality report
+        3. Removed word wrap from reports to Display (Laurent Pellenc)
+        4. Support for #Endif and #End If (Gerd Blanke)
+        5. Support for comments at start of .cls file (Gerd Blanke)
+        6. Fixed splitter bars in main window (Laurent PELLENC)
+
+
+v5.1.03 August 1999
+        *** Bug fixes ***
+        1. Fixed problem with metrics limit set to > 32K (Edward Pfohl)
+        2. Fixed some colors to system defaults (Nicholas Varacalli)
+        3. "Missing ByVal/ByRef" and "As Object" are not reported as 
+           problems with parameters in events and implementing
+           procedures (Nicholas Varacalli)
+        4. Fixed rare problem in analysis phase 3/2 (Nigel Shipley)
+        5. Fixed end-of-file error in Project Printer enhanced mode for
+           files without code (Gerhard Brischewski)
+        6. Removed empty progress bar from Problem View when the view
+           was hidden and shown again during the analysis
+        7. Fixed "Invalid procedure call or argument" in Project Printer
+           enhanced mode if a non-comment line ended with a dot 
+           (Tim Holden)
+        8. Project Printer missed some procedures if option 
+           "Group Subs/Functions/Events/Properties" was checked 
+           (Brian Knopp)
+        9. Procedures with comments at end of line are no longer reported
+           as procedures without comment (James Pragit)
+        10.Types and Enums used to type Public variables are no longer
+           reported as having excessive scope (James Pragit)
+
+        *** Minor changes ***
+        1. (declarations) sections are no longer checked for 
+           "lines of code exceed limit" 
+        2. Changed some yellow resize bars to default button color
+           (suggested by Giuseppe Mura)
+        3. The Problem View is now resizable to full screen (suggested
+           by Jeff Birkel)
+        4. Metrics values that are equal to their limit are no longer 
+           reported as problems
+        5. It is now possible to report problems related to selected
+           files only (suggested by Dan Essin)
+        6. Design quality report counts partial comments (at end of code
+           lines) in "comment to code ratio" as half comments
+
+v5.1.02 May 1999
+        Minor changes
+
+v5.1.01 May 1999
+        *** Bug fixes ***
+        1. Fixed "Error in phase 3" related to > 32K of problems 
+           (reported by Chris Oakleaf)
+        2. Added error detection to printing (Jack Presley)
+
+
+v5.0.91 Beta May 1999
+        *** Minor changes ***
+        1. Problem view shows values of metrics (Darrell Roberts)
+        2. Settings for default filters can be viewed (Darrell Roberts)
+        3. Hypertext view and report window updated when dragging the 
+           scroll bars (Ole Grossklaus)
+        4. Scrollbars of hypertext view and report window are sized 
+           according to system settings (Ole Grossklaus)
+        5. Problem icon in VB Browser highlighted when problem selected
+           in the Problem view (Gregorio Loppi)
+        6. Progress bar added to Cross-reference report
+
+        *** Bug fixes ***
+        1. Problem filter window positioned at center of screen instead
+           of out of screen (Gregorio Loppi)
+        2. If the same file is included in the project both as Component
+           and as Reference, Project Analyzer treats it as one file
+           (Gregorio Loppi)
+        3. Error #35601: Element not found fixed (Gregorio Loppi)
+        4. Dead code bug fixed (James Pragit, Gregorio Loppi, 
+           Ole Grossklaus)
+        5. Dead classes bug fixed (Jack Fox)
+        6. Handling of complex Dim statements fixed - 
+           the ReDim To [Variant] bug (Jack Fox)
+        7. White "short summary" window of demo version updated
+
+v5.0.90 Beta May 1999
+        *** Major new features ***
+        1. New problem detection features: 
+           new problems, configurable detection
+        2. Cross-reference report (suggested by Jean-Pierre Imbert)
+
+        *** Minor new features ***
+        1. Archive feature supports long and short file names 
+           (useful for pkzip and arj)
+        2. Archive feature uses path names with WinZip by default
+        3. Properties of UserControls are always Live
+
+        *** Bug fixes ***
+        1. Added support for line continuation character in Project
+           Printer's Comment manual (Courtney Whitney)
+        2. Fixed Copy & Paste in VB Browser (krymson skorpyon)
+        3. Fixed bug with certain complex "=" statements
+        4. Fixed bug with "_" in the procedure declaration line that
+           affected references and deadness of procedure parameters
+        5. Fixed Friend procedures that were marked as Public
+           (Richard Troup)
+        6. Fixed crash with message 
+           "Error opening output file. Redirecting to display."
+           (Courtney Whitney)
+        7. Fixed tables with reports, especially RTF and HTML
+
+
+v5.0.07 February 1999
+        *** Improvements ***
+        1. Copy to Clipboard in the report window works faster
+        2. Support for WinZip in Archive feature (idea: Dennis Fitzgerald)
+
+        *** Bug fixes ***
+        1. Some OCXs were mistakenly reported as being in the System dir
+        2. Support for line continuation "_" in the List procedures
+           command (reported by Don Krouse)
+
+
+v5.0.06 February 1999
+        *** Minor new features ***
+        1. Added Copy to Clipboard function to the main window detail
+           lists (suggested by Jim Vose)
+        2. Event name listed in the main window | Module | Controls tab
+        3. Added Splitter bar to main window
+
+        *** Bug fixes ***
+        1. Fixed Private & Public members count in the Module tab of 
+           the main window
+        2. Multiple DefType statements allowed on the same line (Bill Spens)
+        3. Fixed problem with syntax Type.[Field] (John Edwards)
+
+v5.0.05 December 1998
+        *** New ***
+        1. Added a tutorial on how to use Project Analyzer (tutorial.doc)
+
+        *** Bug fixes ***
+        1. Forms counted correctly (Thomas Naylor)
+        2. Fixed problem with commas in a Const declaration (Martyn Walker)
+
+v5.0.04 November 1998
+        *** Bug fixes ***
+        1. Unlock keyword not asked again and again
+        2. Project Printer now prints all line labels 
+           (reported by Thomas Naylor)
+
+v5.0.03 November 1998
+        *** Minor new features ***
+        1. Added different icon to Events in the tree in the main window
+        2. Added more properties to Module tab of VB Browser
+
+        *** Bug fixes ***
+        Bugs reported by Allen Hynes:
+        1. Fixed handling of constants with & operators 
+        2. Removed buggy "Miscellaneous" section from Project Report
+        Bugs reported by Andre van Dalen:
+        3. Erroneous reporting of missing HelpContextIDs on UserForms
+        4. Procedure pane cleared when a library or referenced file 
+           is selected.
+        5. Fixed crash if program closed as minimized and then re-run
+        6. "Analyze" button no longer disabled if user presses Cancel
+           at start-up
+        Bugs reported by Dave Gigantelli:
+        7. Added error handling to Design quality report
+        8. Fixed "Internal configuration error"
+
+v5.0.02 October 1998
+        *** Bug fixes ***
+        1. The Options|Report to feature works again (reported by Allen
+           Hynes)
+        2. Removed a non-working menu item from the Help menu of demo 
+           (reported by Allen Hynes)
+
+v5.0.01 October 1998
+        *** Minor new features ***
+        1. New syntax in Project Printer/Comment manual: ~ at the start of 
+           a commented line prevents the line from being included in the 
+           manual. (suggested by Bill Dagg)
+        2. Word wrap on reports to printer (esp. Project Printer)
+        3. Functions without code listed on the Problem Report
+        4. Distribution of comments per procedure on the Design quality
+           Report
+
+
+v5.0.00 October 1998 (beta)
+        *** Major new features ***
+        1. Support for VB 6.0
+        2. Saving and reloading of analysis (.anl file)
+        3. VB Browser integrated in the main window
+        4. Call depth report
+
+        *** Minor new features ***
+        1. Problem Report lists Functions with no type
+        2. Problem Report lists unused files
+        3. Copy selected text from the Hypertext window
+        4. Customizable report footers
+        5. Footer in the printout for Project Graph
+        6. Limits in the Metrics windows saved between sessions
+
+        *** Other changes ***
+        1. Dead variables "Param in base class" and "Param in
+           implementation" no longer included on the Problem Report
+           (suggested by Ander van Dalen)
+        2. Branches of the Call tree window now listed in call order,
+           not alphabetically
+
+        *** Bug fixes ***
+        1. Support for line labels
+
+
+v4.2.01 August 1998
+        *** New features ***
+        1. Need report, or regression analysis, lists all entities that
+           selected procedures need. See the Report menu. 
+           (idea by Brian K. Griffen)
+        2. Problem report now checks for duplicate hotkeys in menus.
+
+        *** Enhancements ***
+        1. Support for line continuation character "_".
+           Still a few bugs in hypertext and Project Printer.
+        2. The Find window wider now
+        3. New metric on the Design Quality report: 
+               Lines of comment / procedure
+           Target value? At least 3. What do you think?
+        4. The main window remembers its position at start-up (suggested
+           by Gerd Blanke)
+
+        *** Bug fixes ***
+        1. Extra spaces removed in analyzing "Sub      mysub"
+        2. Warning in Call Tree view if the tree is extra large
+        3. Fixed errors with paths like "..\.." (reported by Jack Fox)
+        4. Fixed errors with references to Property Lets that take 
+           parameters (reported by Jim Giles)
+
+
+v4.1.18 June 1998
+        *** Bug fixes ***
+        1. Fixed problems in Needless Globals report with Implements 
+           statement (as reported by Andre van Dalen)
+        2. Fixed bug with informational fan-in & fan-out 
+           (as reported by Elizabeth Aguina)
+        3. "With <LocalVariable>" now works (reported by Andre van Dalen)
+
+v4.1.17 June 1998
+        *** Bug fix ***
+        1. Fixed a bug with the following syntax:
+           object(somefunction).member
+           where somefunction was not properly detected
+           (as reported by Martyn Walker)
+
+v4.1.16 June 1998
+        *** Minor new feature ***
+        1. Print command in Project Graph
+
+v4.1.15 May 1998
+        *** Enhancement ***
+        1. Change with Implemented interfaces, both in base and 
+           derived classes: unused parameters of interface procedures
+           are only semi-dead, i.e. marked specially. 
+           (problem pointed out by Andre Dalen)
+
+        *** Bug fixes ***
+        1. Fixed crash if selected report file was already open by
+           another program (bug reported by Rob O'Farrell)
+        2. Removed error "Invalid nestings in source code"
+        3. Better error report for analysis errors (as requested by 
+           Martyn Walker)
+
+
+v4.1.14 May 1998
+        *** Enhancements ***
+        1. Added Forward and History commands to the VB Browser. The 
+           cursor position is now bookmarked too, so you get back to 
+           where you were.
+
+        *** Bug fix ***
+        1. Fixed errors caused by ":" to separate statements on one line
+           (bug reported by Sergei Dumnov)
+
+v4.1.13 May 1998
+        *** Minor new features ***
+        1. A few changes in Problem report
+        2. Included a right-click menu in the Vars & Consts window
+
+        *** Bug fixes ***
+        1. Fixed occasional Overflow in Design quality report (large projects)
+        2. Fixed tables in RTF for WordPad (RTF for MS Word not checked)
+
+v4.1.12 May 1998
+        *** Bug fix ***
+        1. "Public Event xyz()" is not a variable declaration :-)
+
+v4.1.11 May 1998
+        *** Minor new features ***
+        1. New option in the General options window: definition of
+           dead/live variables.
+        2. The Summary report shows how many variables of different 
+           types there are in your project.
+
+v4.1.10 April 1998
+        *** Bug fix ***
+        1. Removed hang if "_" was used with "=" and ()'s
+
+v4.1.09 April 1998
+        *** Bug fixes ***
+        1. Empty DLL file names prevented from appearing
+        2. Registration of Project Graph is no longer disabled 
+           if Project Printer is registered.
+
+v4.1.08 April 1998
+        *** Enhancement ***
+        1. Problem Report includes a "Sizable Forms without 
+            Resize event" section
+
+        *** Bug fixes ***
+        1. The Minimized property of VB3 Forms captured correctly
+        2. Fixed handling of \\SERVER style path names
+        3. Removed a few false alarms in "Forms with ControlBox but 
+            without icon" on the Problem Report 
+
+v4.1.07 March 1998
+        *** Enhancement ***
+        1. The Copy command in the Display report window now copies
+           formatted text (RTF). 
+
+        *** Bug fixes ***
+        1. Nested references (MyClass.MyClass.MyMember) handled
+           correctly
+        2. Removed a few false references to Public variables/constants 
+           of form/class modules
+
+v4.1.06 March 1998
+        *** New feature ***
+        1. Comment directives to define dead entities as used. See the
+           help file for Comment directives.
+
+        *** Bug fixes ***
+        1. Fixed crashing in VB Browser with complex procedures
+        2. Toolbar buttons disabled if no project analyzed
+        3. Fixed a problem 1 reference was not found in a special case.
+           This occurred when there were 2^n procedures, for example. 
+           References to the last procedure were not detected, because
+           of a rounding error: Int(Log(8) / Log(2)) = 2, although 
+           mathematically it is 3.
+        4. Fixed jamming of the FRX view when it can't read the contents
+           of a FRX file.
+        5. Fixed a scope problem where global variables/constants
+           got extra references in certain name shadowing cases.
+
+
+
+v4.1    Add-in Project Graph introduced (January 1998)
+v4.0    Support for VB 3-5 (September 1997)
+v3.1    Super Project Analyzer and Project Printer add-ins introduced
+v3.0    Support for VB 3-4
+

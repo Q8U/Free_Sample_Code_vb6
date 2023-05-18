@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta name="description"
+content="Free ActiveX components (controls and libraries) made in Visual Basic 5, that can be used in other projects and programs.">
+<meta name="keywords"
+content="ActiveX, components, Visual Basic 5, ocx, control, library, libraries, program, programming, development, free, gradient, form, project, component, dll, ini, files, initialization, file, system, access">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>AR INI Manager Library</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="center"><center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td width="100%" bgcolor="#FFD940"><font color="#0000FF" size="4" face="Verdana"><strong>AR
+    INI Manager Library 2.0</strong></font></td>
+  </tr>
+</table>
+</center></div>
+
+<p><font color="#000000" face="Verdana" size="1">This library will allow you to manage INI
+files in a very simple way. Just with a few methods you will be able to read, write and
+list the whole contents of INI files.</font></p>
+
+<p><font color="#000000" face="Verdana" size="1"><u>History:</u></font>
+
+<ul>
+  <li><font color="#000000" face="Verdana" size="1">26.03.98: Version 1.0 released.</font></li>
+  <li><font color="#000000" face="Verdana" size="1">12.04.98, version 1.01: a couple of
+    internal small things changed.</font></li>
+  <li><font color="#000000" face="Verdana" size="1">30.12.98, version 2.0: the library has
+    been completelly remodeled. Therefore, it is not binary compatible with previous versions.</font></li>
+</ul>
+
+<p><font color="#000000" face="Verdana" size="1">The classes included in this librarry
+are:</font></p>
+<div align="center"><center>
+
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="100%" colspan="2" align="center"><small><font face="Verdana"><strong>ARINIManager</strong><small><br>
+    This is the main classe you have to use. From this one you can access all the rest of the
+    classes in this library.</small></font></small></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Properties:</font></small></small><ul>
+      <li><small><small><font face="Verdana">INIFile as String. Path to the .ini file you want to
+        open.</font></small></small></li>
+      <li><small><small><font face="Verdana">Sections as clsSections. This property takes you to a
+        clsSections class, which is a collection of the sections that the .ini file has.</font></small></small></li>
+      <li><small><small><font face="Verdana">Size as Long. Physical size of the .ini file.</font></small></small></li>
+    </ul>
+    </td>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Methods:</font></small></small><ul>
+      <li><small><small><font face="Verdana">GetValue (Section As String, Key As String, [Default
+        As String]) As String. This method is provided as a shortcut to get a direct value.</font></small></small></li>
+      <li><small><small><font face="Verdana">Refresh. Updates the contents of the library by
+        reloading the .ini file.</font></small></small></li>
+      <li><small><small><font face="Verdana">WriteValue (Section As String, Key As String, Value
+        As String) As Boolean. This method is provided as a shortcut to write a value. Returns
+        True if successful, or False otherwise.</font></small></small></li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;</p>
+<div align="center"><center>
+
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="100%" colspan="2"><p align="center"><small><font face="Verdana"><strong>clsSections</strong><small><br>
+    This object contains a collection of the sections in the .ini file.</small></font></small></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Properties:</font></small></small><ul>
+      <li><small><small><font face="Verdana">Count as Long. Number of sections.</font></small></small></li>
+      <li><small><small><font face="Verdana">Item (Index) as clsSection. Index can be a number or
+        the name of a section. This property takes to a clsSection object.</font></small></small></li>
+    </ul>
+    </td>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Methods:</font></small></small><ul>
+      <li><small><small><font face="Verdana">Add (Name as String) as Boolean. Adds a new section
+        to the .ini file. Returns True if successful or False otherwise.</font></small></small></li>
+      <li><small><small><font face="Verdana">Remove (Name as String) as Boolean. Removes a section
+        from the .ini file, and all of its values, if any. Returns True if successful or False if
+        an error ocurred.</font></small></small></li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p><font color="#000000" size="2" face="Verdana"><u>&nbsp;</u></font></p>
+<div align="center"><center>
+
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="100%" colspan="2" align="center"><small><font face="Verdana"><strong>clsValues</strong><small><br>
+    This object contains a collection of values under a certain section.</small></font></small></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Properties:</font></small></small><ul>
+      <li><small><small><font face="Verdana">Count as Long. Number of values in the collection.</font></small></small></li>
+      <li><small><small><font face="Verdana">Item (Index) as clsValue. Index can be a number or
+        the name of a value. This property takes you to a clsValue object.</font></small></small></li>
+    </ul>
+    </td>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Methods:</font></small></small><ul>
+      <li><small><small><font face="Verdana">Add (Name As String, Value As String) As Boolean.
+        Adds a new value to the section. Returns True if successful.</font></small></small></li>
+      <li><small><small><font face="Verdana">Remove (Name As String) As Boolean. Removes a value
+        from the section. Returns True if successful.</font></small></small></li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p><font color="#000000" size="2" face="Verdana"><u>&nbsp;</u></font></p>
+<div align="center"><center>
+
+<table border="1" cellpadding="2" cellspacing="0" width="100%">
+  <tr>
+    <td width="50%" align="center"><strong><small><font face="Verdana">clsSection</font></small></strong></td>
+    <td width="50%" align="center"><strong><small><font face="Verdana">clsValue</font></small></strong></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Properties:</font></small></small><ul>
+      <li><small><small><font face="Verdana">Name as String.</font></small></small></li>
+      <li><small><small><font face="Verdana">Values as clsValues.</font></small></small></li>
+    </ul>
+    </td>
+    <td width="50%" valign="top"><small><small><font face="Verdana">Properties:</font></small></small><ul>
+      <li><small><small><font face="Verdana">Name as String.</font></small></small></li>
+      <li><small><small><font face="Verdana">Value as String.</font></small></small></li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<p align="center"><font size="1" face="Verdana">&nbsp;</font></p>
+
+<p align="center"><font size="1" face="Verdana">&nbsp;</font></p>
+
+<p align="center"><font size="1" face="Verdana">© <a
+href="mailto:merlin@sevillaonline.com">Alvaro Redondo</a>, 1998. All Rights Reserved.<br>
+<a href="http://www.sevillaonline.com/ActiveX">http://www.sevillaonline.com/ActiveX</a></font></p>
+</body>
+</html>

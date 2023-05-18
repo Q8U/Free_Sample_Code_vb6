@@ -1,0 +1,69 @@
+// DLS Media.idl : IDL source for DLS Media.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DLS Media.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(1D847139-91A6-4395-9414-AC524F37A264),
+		dual,
+		helpstring("IWaveMixer Interface"),
+		pointer_default(unique)
+	]
+	interface IWaveMixer : IDispatch
+	{
+		[id(1), helpstring("method Add")] HRESULT Add([in] BSTR bstrFileName, [out, retval] long* pnID);
+		[id(2), helpstring("method Clear")] HRESULT Clear();
+		[propget, id(3), helpstring("property LoadedWaves")] HRESULT LoadedWaves([out, retval] long *pVal);
+		[id(4), helpstring("method GetSoundInfo")] HRESULT GetSoundInfo([in] int nIndex, [out] long* pnID, [out] BSTR* pbstrFileName, [out] long* pnOriginalFrequency, [out] long* pnChannels, [out] long* pnBits, [out] long* pnSize);
+		[id(5), helpstring("method Initialize")] HRESULT Initialize([in] long hWnd);
+		[id(6), helpstring("method Play")] HRESULT Play([in] long nID, [in] BOOL bLoop);
+		[id(7), helpstring("method Remove")] HRESULT Remove([in] long nID);
+		[id(8), helpstring("method SetVolume")] HRESULT SetVolume([in] long nID, [in] long nVolume);
+		[id(9), helpstring("method SetPan")] HRESULT SetPan([in] long nID, [in] long nPan);
+		[id(10), helpstring("method Stop")] HRESULT Stop([in] long nID);
+		[id(11), helpstring("method SetFrequency")] HRESULT SetFrequency([in] long nID, [in] long nFrequency);
+		[id(12), helpstring("method ResetFrequency")] HRESULT ResetFrequency([in] long nID);
+		[id(13), helpstring("method GetFrequency")] HRESULT GetFrequency([in] long nID, [out] long* pnFrequency);
+		[id(14), helpstring("method GetPan")] HRESULT GetPan([in] long nID, [out] long* pnPan);
+		[id(15), helpstring("method GetVolume")] HRESULT GetVolume([in] long nID, [out] long* pnVolume);
+		[propget, id(16), helpstring("property UsedMemory")] HRESULT UsedMemory([out, retval] long *pVal);
+		[propget, id(17), helpstring("property MaxMemory")] HRESULT MaxMemory([out, retval] long *pVal);
+		[propput, id(17), helpstring("property MaxMemory")] HRESULT MaxMemory([in] long newVal);
+		[id(18), helpstring("method GetName")] HRESULT GetName([in] long nID, [out] BSTR* pbstrName);
+		[id(19), helpstring("method StopAll")] HRESULT StopAll();
+	};
+
+[
+	uuid(1B613114-6B19-4101-8A89-C1D6FD2E7639),
+	version(1.0),
+	helpstring("DLS Media")
+]
+library DLSMEDIALib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(4B402B69-C8E1-4872-9BC9-2A1FF935F19E),
+		helpstring("_IWaveMixerEvents Interface")
+	]
+	dispinterface _IWaveMixerEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(94326DCC-A647-497C-B2C4-69692A014513),
+		helpstring("WaveMixer")
+	]
+	coclass WaveMixer
+	{
+		[default] interface IWaveMixer;
+		[default, source] dispinterface _IWaveMixerEvents;
+	};
+};

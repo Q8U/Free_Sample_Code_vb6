@@ -1,0 +1,456 @@
+Attribute VB_Name = "Module1"
+'-----------------------------------------------------------------------
+'               Copyright (C) 1991 Microsoft Corporation
+'
+' You have a royalty-free right to use, modify, reproduce and distribute
+' the Sample Application Files (and/or any modified version) in any way
+' you find useful, provided that you agree that Microsoft has no warranty,
+' obligations or liability for any Sample Application Files.
+'
+' -----------------------------------------------------------------------
+#If Win32 Then
+    DefLng H
+#Else
+    DefInt H
+#End If
+'
+' Type use by the API routine InvertRect()
+'
+#If Win32 Then
+Type RECT
+    Left As Long
+    Top As Long
+    Right As Long
+    bottom As Long
+End Type
+Type POINTAPI
+    X As Long
+    Y As Long
+End Type
+Type ICONINFO
+    fIcon As Long
+    xHotspot As Long
+    yHotspot As Long
+    hBMMask As Long
+    hBMColor As Long
+End Type
+Type GUID
+    Data1 As Long
+    Data2 As Integer
+    Data3 As Integer
+    Data4(7) As Byte
+End Type
+Type PICTDESC
+    cbSizeofstruct As Long
+    picType As Long
+    Long1 As Long
+    Long2 As Long
+    Long3 As Long
+End Type
+Global Const PICTYPE_BITMAP = 1
+Global Const PICTYPE_ICON = 3
+Type LOGBRUSH
+    lbStyle As Long
+    lbColor As Long
+    lbHatch As Long
+End Type
+
+Declare Function CreateIconIndirect Lib "User32" (icoinfo As ICONINFO) As Long
+Declare Function CreateBrushIndirect Lib "gdi32" (lpLogBrush As LOGBRUSH) As Long
+Declare Function ExtFloodFill Lib "gdi32" (ByVal hDC As Long, ByVal X As Long, ByVal Y As Long, ByVal crColor As Long, ByVal fuFillType As Long) As Long
+Declare Function DestroyIcon Lib "User32" (ByVal hIcon As Long) As Long
+Declare Function OleCreatePictureIndirect Lib "olepro32.dll" (lpPictDesc As PICTDESC, riid As GUID, ByVal fOwn As Long, IPic As IPicture) As Long
+Declare Sub CopyMemory Lib "Kernel32" Alias "RtlMoveMemory" (pDest As Any, pSource As Any, ByVal ByteLen As Long)
+Declare Function GSM Lib "User32" Alias "GetSystemMetrics" (ByVal nIndex As Long) As Long
+Declare Function GetDeviceCaps Lib "gdi32" (ByVal hDC As Long, ByVal nIndex As Long) As Long
+Declare Function CreateCompatibleDC Lib "gdi32" (ByVal hDC As Long) As Long
+Declare Function BitBlt Lib "gdi32" (ByVal hDestDC As Long, ByVal X As Long, ByVal Y As Long, ByVal nWidth As Long, ByVal nHeight As Long, ByVal hSrcDC As Long, ByVal xSrc As Long, ByVal ySrc As Long, ByVal dwRop As Long) As Long
+Declare Function SelectObject Lib "gdi32" (ByVal hDC As Long, ByVal hObject As Long) As Long
+Declare Function DeleteDC Lib "gdi32" (ByVal hDC As Long) As Long
+Declare Function DeleteObject Lib "gdi32" (ByVal hObject As Long) As Long
+Declare Function GetStockObject Lib "gdi32" (ByVal nIndex As Long) As Long
+Declare Function Polygon Lib "gdi32" (ByVal hDC As Long, lpPoints As POINTAPI, ByVal nCount As Long) As Long
+Declare Function CreateCompatibleBitmap Lib "gdi32" (ByVal hDC As Long, ByVal nWidth As Long, ByVal nHeight As Long) As Long
+Declare Function GetBitmapBits Lib "gdi32" (ByVal hBitmap As Long, ByVal dwCount As Long, ByVal lpBits As Any) As Long
+Declare Function GlobalLock Lib "Kernel32" (ByVal hMem As Long) As Long
+Declare Function GlobalUnlock Lib "Kernel32" (ByVal hMem As Long) As Long
+Declare Function GetIconInfo Lib "User32" (ByVal hIcon As Long, icoinfo As ICONINFO) As Long
+Declare Function GetNearestColor Lib "gdi32" (ByVal hDC, ByVal RGBColor As Long) As Long
+Declare Function GetPrivateProfileInt Lib "Kernel32" Alias "GetPrivateProfileIntA" (ByVal Appname As String, ByVal KeyName As String, ByVal DEFAULT As Long, ByVal FileName As String) As Long
+Declare Function GetPrivateProfileString Lib "Kernel32" Alias "GetPrivateProfileStringA" (ByVal Appname As String, ByVal KeyName As String, ByVal DEFAULT As String, ByVal ReturnedString As String, ByVal MaxSize As Long, ByVal FileName As String) As Long
+Declare Function WritePrivateProfileString Lib "Kernel32" Alias "WritePrivateProfileStringW" (ByVal Appname As String, ByVal KeyName As String, ByVal NewString As String, ByVal FileName As String) As Long
+Declare Function StretchBlt Lib "gdi32" (ByVal hDCDest, ByVal X As Long, ByVal Y As Long, ByVal Width As Long, ByVal Height As Long, ByVal hDCSrc, ByVal srcX As Long, ByVal srcY As Long, ByVal srcWidth As Long, ByVal srcHeight As Long, ByVal Rop As Long) As Long
+Declare Function WinHelp Lib "User32" Alias "WinHelpA" (ByVal hWnd, ByVal HelpFile As String, ByVal wCommand As Long, ByVal dwData As Long) As Long
+Declare Function InvertRect Lib "User32" (ByVal hDC, lpRect As RECT) As Long
+
+Declare Function GetMenu Lib "User32" (ByVal hWnd) As Long
+Declare Function GetSubMenu Lib "User32" (ByVal hWnd, ByVal Position As Long) As Long
+Declare Function GetSystemMenu Lib "User32" (ByVal hWnd, ByVal bRevert As Long) As Long
+Declare Function RemoveMenu Lib "User32" (ByVal hMenu, ByVal nPosition As Long, ByVal wFlags As Long) As Long
+Declare Function TrackPopupMenu Lib "User32" (ByVal hMenu, ByVal r1 As Long, ByVal X As Long, ByVal Y As Long, ByVal r2 As Long, ByVal hWnd As Long, ByVal r3 As Long) As Long
+
+Global Const BLACK_BRUSH = 4
+Global Const NOTSRCERASE = &H1100A6     ' (DWORD) dest = (NOT src) AND (NOT dest)
+Global Const WHITENESS = &HFF0062       ' (DWORD) dest = WHITE
+Global Const FLOODFILLSURFACE = 1
+Global Const SRCAND = &H8800C6  ' (DWORD) dest = source AND dest
+Global Const SRCINVERT = &H660046       ' (DWORD) dest = source XOR dest
+Global Const SRCCOPY = &HCC0020 ' (DWORD) dest = source
+Global Const BLACKNESS = &H4262       ' (DWORD) dest = BLACK
+Global Const BITSPIXEL = 12 '  Number of bits per pixel
+Global Const PLANES = 14    '  Number of planes
+Global Const SM_CXICON = 11
+Global Const SM_CYICON = 12
+Global Const BS_SOLID = 0
+Global Const MF_BYPOSITION = &H400
+Global Const HELP_CONTEXT = &H1
+Global Const HELP_QUIT = &H2
+Global Const HELP_HELPONHELP = &H4
+
+Global IID_IDispatch As GUID
+#Else
+Type RECT
+    Left As Integer
+    Top As Integer
+    Right As Integer
+    bottom As Integer
+End Type
+'
+' Window API Function Declarations
+'
+Declare Function BitBlt Lib "Gdi" (ByVal hDCDest, ByVal X As Integer, ByVal Y As Integer, ByVal Width As Integer, ByVal Height As Integer, ByVal hDCSrc As Integer, ByVal srcX As Integer, ByVal srcY As Integer, ByVal Rop As Long) As Integer
+Declare Function CreateCompatibleBitmap Lib "Gdi" (ByVal hDC, ByVal Width As Integer, ByVal Height As Integer) As Integer
+Declare Function CreateCompatibleDC Lib "Gdi" (ByVal hDC) As Integer
+Declare Function DeleteDC Lib "Gdi" (ByVal hDC) As Integer
+Declare Function DeleteObject Lib "Gdi" (ByVal hObject) As Integer
+Declare Function ExtFloodFill Lib "Gdi" (ByVal hDC, ByVal X As Integer, ByVal Y As Integer, ByVal crColor As Long, ByVal wFillType As Integer) As Integer
+Declare Function GetBitmapBits Lib "Gdi" (ByVal hBitmap, ByVal dwCount As Long, ByVal lpBits As Long) As Long
+Declare Function GetDeviceCaps Lib "Gdi" (ByVal hDC, ByVal nIndex As Integer) As Integer
+Declare Function GetMenu Lib "User" (ByVal hWnd) As Integer
+Declare Function GetNearestColor Lib "Gdi" (ByVal hDC, ByVal RGBColor As Long) As Long
+Declare Function GetPrivateProfileInt Lib "Kernel" (ByVal Appname As String, ByVal KeyName As String, ByVal DEFAULT As Integer, ByVal FileName As String) As Integer
+Declare Function GetPrivateProfileString Lib "Kernel" (ByVal Appname As String, ByVal KeyName As String, ByVal DEFAULT As String, ByVal ReturnedString As String, ByVal MaxSize As Integer, ByVal FileName As String) As Integer
+Declare Function GetSubMenu Lib "User" (ByVal hWnd, ByVal Position As Integer) As Integer
+Declare Function GetSystemMenu Lib "User" (ByVal hWnd, ByVal bRevert As Integer) As Integer
+Declare Function GlobalLock Lib "Kernel" (ByVal mMem As Integer) As Long
+Declare Function GlobalUnlock Lib "Kernel" (ByVal mMem As Integer) As Integer
+Declare Function InvertRect Lib "User" (ByVal hDC, lpRect As RECT) As Integer
+Declare Function RemoveMenu Lib "User" (ByVal hMenu, ByVal nPosition As Integer, ByVal wFlags As Integer) As Integer
+Declare Function SelectObject Lib "Gdi" (ByVal hDC, ByVal hObject) As Integer
+Declare Function SetBitmapBits Lib "Gdi" (ByVal hBitmap, ByVal dwCount As Long, ByVal lpBits As Long) As Long
+Declare Function StretchBlt Lib "Gdi" (ByVal hDCDest, ByVal X As Integer, ByVal Y As Integer, ByVal Width As Integer, ByVal Height As Integer, ByVal hDCSrc, ByVal srcX As Integer, ByVal srcY As Integer, ByVal srcWidth As Integer, ByVal srcHeight As Integer, ByVal Rop As Long) As Integer
+Declare Function TrackPopupMenu Lib "User" (ByVal hMenu, ByVal r1 As Integer, ByVal X As Integer, ByVal Y As Integer, ByVal r2 As Integer, ByVal hWnd As Integer, ByVal r3 As Long) As Integer
+Declare Function WinHelp Lib "User" (ByVal hWnd, ByVal HelpFile As String, ByVal wCommand As Integer, ByVal dwData As Long) As Integer
+Declare Function WritePrivateProfileString Lib "Kernel" (ByVal Appname As String, ByVal KeyName As String, ByVal NewString As String, ByVal FileName As String) As Integer
+'
+' Window API Constant Declarations
+'
+Global Const SRCCOPY = &HCC0020
+Global Const SRCAND = &H8800C6
+Global Const SRCINVERT = &H660046
+Global Const BLACKNESS = &H42&
+Global Const FLOODFILLSURFACE = 1
+Global Const MF_BYPOSITION = &H400
+Global Const BITSPIXEL = 12
+Global Const HELP_CONTEXT = &H1
+Global Const HELP_QUIT = &H2
+Global Const HELP_HELPONHELP = &H4
+#End If
+'
+' Type use by IconWorks to keep track of the 6 Icons that be edited at once.
+'
+Type ICONRECORD
+    FileName As String
+    FullPath As String
+    Changed As Integer
+End Type
+'
+' INI file KeyNames
+'
+Global Const APP_NAME = "IconWorks"
+Global Const KEY_COLOR = "Colors Row"
+Global Const KEY_GRID = "Grid"
+Global Const KEY_LINE_GRID = "Line Grid"
+Global Const KEY_DOTTED_GRID = "Dotted Grid"
+Global Const KEY_STATUS_BAR = "Status Bar"
+Global Const KEY_TOOL_PALETTE = "Tool Palette"
+Global Const KEY_COLOR_PALETTE = "Color Palette"
+Global Const KEY_ZOOM_SCROLLBAR = "Zoom Scrollbar"
+Global Const KEY_FOCUS = "Editor Focus"
+Global Const KEY_BORDER = "Icon Border"
+Global Const KEY_POPUP = "Popup Menu"
+Global Const KEY_SHOW_ICONS = "Show Icons"
+Global Const KEY_DEFAULT = "Default Colors"
+Global Const KEY_SOLID = "Solid Colors"
+Global Const KEY_INI = "INI File Colors"
+Global Const INI_FILENAME = "IconWrks.INI"
+'
+' Default Color palette values
+'
+Global Const DEFAULT_COLORS_ROW1 = "16777215 14737632 12632319 12640511 14745599 12648384 16777152 16761024 16761087 00000192 00016576 00049344 00049152 12632064 12582912 12583104"
+Global Const DEFAULT_COLORS_ROW2 = "12632256 04210752 08421631 08438015 08454143 08454016 16777088 16744576 16744703 00000128 00016512 00032896 00032768 08421376 08388608 08388736"
+Global Const DEFAULT_COLORS_ROW3 = "08421504 00000000 00000255 00033023 00065535 00065280 16776960 16711680 16711935 00000064 04210816 00016448 00016384 04210688 04194304 04194368"
+'
+' Default value for ICONRECORD Filename field
+'
+Global Const UNTITLED = "[Untitled]"
+'
+' Editor's File Menu ID's
+'
+Global Const MID_NEW = 0
+Global Const MID_OPEN = 1
+Global Const MID_SAVE = 2
+Global Const MID_SAVE_AS = 3
+Global Const MID_EXIT = 5
+'
+' Editor's Edit Menu ID's
+'
+Global Const MID_UNDO = 0
+Global Const MID_CUT = 2
+Global Const MID_COPY = 3
+Global Const MID_PASTE = 4
+Global Const MID_PASTE_OPAQUE = 5
+Global Const MID_DELETE = 6
+Global Const MID_SELECT_ALL = 7
+Global Const MID_FLIP_HORIZONTAL = 9
+Global Const MID_FLIP_VERTICAL = 10
+Global Const MID_ROTATE_RIGHT = 12
+Global Const MID_ROTATE_LEFT = 13
+Global Const MID_INVERT = 15
+'
+' Editor's View Menu ID's
+'
+Global Const MID_STATUS_BAR = 0
+Global Const MID_TOOL_PALETTE = 1
+Global Const MID_COLOR_PALETTE = 2
+Global Const MID_ZOOM_SCROLLBAR = 3
+Global Const MID_SHOW_ALL = 4
+Global Const MID_GRID = 6
+Global Const MID_LINE_GRID = 7
+Global Const MID_DOTTED_GRID = 8
+Global Const MID_ZOOM_IN = 10
+Global Const MID_ZOOM_OUT = 11
+Global Const MID_FOCUS = 13
+Global Const MID_BORDER = 14
+Global Const MID_POPUP_MENU = 15
+
+' Editor's Color Menu ID's
+'
+Global Const MID_COLORS = 0
+Global Const MID_DEFAULT_COLORS = 1
+Global Const MID_SOLID_COLORS = 2
+Global Const MID_INI_COLORS = 3
+Global Const MID_SAVE_COLORS = 5
+Global Const MID_LEFT_RIGHT = 7
+Global Const MID_SCREEN_INVERSE = 8
+'
+' Viewer's Options Menu ID's
+'
+Global Const MID_EDITOR = 0
+Global Const MID_SHOW_ALL_ICONS = 1
+Global Const MID_SHOW_ON_DIR_CHANGE = 3
+'
+' Help Menu ID's
+'
+Global Const MID_INDEX = 1
+Global Const MID_KEYBOARD = 2
+Global Const MID_COMMANDS = 3
+Global Const MID_USING_HELP = 4
+Global Const MID_ABOUT = 6
+'
+' Index values for Editor.Opt_ColorMouse()
+'
+Global Const MOUSE_COLORS = 0
+Global Const SCREEN_COLORS = 1
+'
+' Adjustment Values for Editor's Sub Adjust_X_And_Y()
+'
+Global Const TO_CENTER = 0
+Global Const TO_EDGE = 1
+'
+' Editor's ToolPalette ID's
+'
+Global Const TID_SELECT = 0
+Global Const TID_PAINT = 1
+Global Const TID_FILL = 2
+Global Const TID_LINE = 3
+Global Const TID_SQUARE = 4
+Global Const TID_FILLED_SQUARE = 5
+Global Const TID_CIRCLE = 6
+Global Const TID_FILLED_CIRCLE = 7
+'
+' Viewer and SaveFileDlg File Control values
+'
+Global Const FILE_NOT_FOUND = 53
+Global Const FILENAME_CHANGED = 0
+Global Const FILE_CHANGED = 1
+Global Const DIR_CHANGED = 2
+'
+' Viewer's viewing window Cell size - 32x32 pixels + 1
+'
+Global Const ICON_CELL = 34&
+'
+' Index's into the ColorPalettes' Scrl_RGB()
+'
+Global Const RED_ELEMENT = 0
+Global Const GREEN_ELEMENT = 1
+Global Const BLUE_ELEMENT = 2
+'
+' Miscellaneous
+'
+Global Const EGA_HEIGHT = 7000
+Global Const HIGHLIGHT = 10
+Global Const HID_DEFINING_COLORS = 1000
+Global Const ICONWORKS_EDITOR = 0
+Global Const ICONWORKS_VIEWER = 1
+'
+' Editor's Information Array and Color palette array
+'
+Global ICONINFO(5)  As ICONRECORD
+Global Colors(47)   As Long
+Global MouseColors(3) As Long
+'
+' Editor Global Variables
+'
+Global ToolInProcess    As Integer
+Global MovingSelection  As Integer
+Global Selecting        As Integer
+Global Moveable         As Integer
+Global Opaque           As Integer
+Global CurrentTool      As Integer
+Global CurrentIcon      As Integer
+Global BrushSize        As Integer
+Global PixelSize        As Integer
+Global X1Region         As Integer
+Global Y1Region         As Integer
+Global X2Region         As Integer
+Global Y2Region         As Integer
+Global XMoveSelection   As Integer
+Global YMoveSelection   As Integer
+Global X1SelectFrom     As Integer
+Global Y1SelectFrom     As Integer
+Global X2SelectFrom     As Integer
+Global Y2SelectFrom     As Integer
+Global LastX1           As Integer
+Global LastY1           As Integer
+Global LastX2           As Integer
+Global LastY2           As Integer
+Global LastXpix         As Integer
+Global LastYpix         As Integer
+Global DoubleClicked    As Integer
+Global ColorIndex       As Integer
+Global hDCMono
+Global hBMMono
+Global hBMOldMono
+Global ImageSize        As Integer
+Global XCenter          As Single
+Global YCenter          As Single
+Global Aspect           As Single
+Global Radius           As Single
+Global ColorString      As String
+'
+' Viewer Global Variables
+'
+Global MaxIcons         As Integer
+Global IconRows         As Integer
+Global IconColumns      As Integer
+Global MinViewerWidth   As Integer
+Global MinViewerHeight  As Integer
+Global ShowingAllIcons  As Integer
+'
+' Miscelaneous
+'
+Global MainForm           As Integer
+Global EditorLoaded       As Integer
+Global ViewerLoaded       As Integer
+Global ColorPaletteLoaded As Integer
+Global EditorInitialized  As Integer
+Global VLastChanged       As Integer
+Global SLastChanged       As Integer
+Global NumColorsIs256     As Integer
+Global Text               As String
+Global CRLF               As String * 2
+Global A_TAB              As String * 1
+
+
+' CONSTANTS TAKEN FROM VB'S CONTANT.TXT FILE
+'
+
+' WindowState
+Global Const MINIMIZED = 1
+
+' Clipboard formats
+Global Const CF_BITMAP = 2
+
+' DragOver
+Global Const OVER = 2
+
+' Show parameters
+Global Const MODAL = 1
+Global Const MODELESS = 0
+
+' Colors
+Global Const BLACK = &H0&
+Global Const DARKBLUE = &H800000
+Global Const DARKGREEN = &H8000&
+Global Const DARKCYAN = &H808000
+Global Const DARKRED = &H80&
+Global Const DARKPURPLE = &H800080
+Global Const DARKYELLOW = &H8080&
+Global Const DARKGRAY = &H808080
+Global Const GRAY = &HC0C0C0
+Global Const BLUE = &HFF0000
+Global Const GREEN = &HFF00&
+Global Const CYAN = &HFFFF00
+Global Const RED = &HFF&
+Global Const PURPLE = &HFF00FF
+Global Const YELLOW = &HFFFF&
+Global Const WHITE = &HFFFFFF
+
+' System Colors
+Global Const WINDOW_BACKGROUND = &H80000005
+Global Const WINDOW_TEXT = &H80000008
+
+' MousePointer
+Global Const DEFAULT = 0
+Global Const CROSSHAIR = 2
+Global Const SIZE = 5
+Global Const UP_ARROW = 10
+Global Const HOURGLASS = 11
+
+' DrawMode Values
+Global Const INVERSE = 6
+Global Const COPY_PEN = 13
+
+' DrawStyle property Values
+Global Const SOLID = 0
+Global Const DOT = 2
+
+' FillStyle Values
+Global Const TRANSPARENT = 1
+
+' Key Codes
+Global Const KEY_BACK = &H8
+Global Const KEY_SHIFT = &H10
+Global Const KEY_CONTROL = &H11
+Global Const KEY_INSERT = &H2D
+Global Const KEY_DELETE = &H2E
+Global Const KEY_F1 = &H70
+
+' Shift parameter masks
+Global Const SHIFT_MASK = 1
+Global Const CTRL_MASK = 2
+Global Const ALT_MASK = 4
+
+' Button parameter masks
+Global Const LEFT_BUTTON = 1
+Global Const RIGHT_BUTTON = 2
+
+' ScaleModes
+Global Const TWIPS = 1
+Global Const PIXELS = 3
+
+' MsgBox return values
+Global Const MBYES = 6
+Global Const MBNO = 7
+

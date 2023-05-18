@@ -1,0 +1,117 @@
+TACMWaveIN, TACMWaveOUT
+=======================
+
+Overview
+--------
+  This componens can play/record wave streams like some components on the internet. but, only this (as long as I found) can compress/decompress wave streams using installed CODEC on windows 95/98(NT maybe well. I couldn't test) - GSM 6.1, IMA ADPCM, Microsoft ADPCM, CCITT, etc.  Using windows standard dialog box or by manually, any available wave format can be selected.
+
+  I used this components to implement Audio-phone or internet-phone using GSM 6.1 CODEC (this codec generate only about 1.6KB/sec) !! Any other purpose will do.
+
+
+** Please SEE THE DEMO INCLUDED!!
+
+** This component is not freeware but *SHAREWARE*. You must buy this component for commercial use.
+
+   See 'Order Information' of this text for buying.
+
+      * register fee is US$ 30 (without source).
+      ==========================================
+
+Version 1.2
+-----------
+   
+  * Fixed some bugs and properties.
+    
+    The property 'ABufferTime' means the length of each wave buffer in SECONDS.
+    But, quantized to 1024 bytes.
+
+   
+Author:
+-------
+      Sang-Hee, Kim
+
+E-Mail:
+-------
+      potpry@iname.com
+
+HomePage:
+---------
+      http://archi.snu.ac.kr/shkim/delphi
+ 
+
+Installation
+------------
+     
+      In the delphi IDE, choose Components-Install Component item from the menu, select 'ACMWaveIO.dcu' and click OK. There should be a new tab in the component palette named 'MyComponents'.
+
+
+Usage:
+------
+     1)
+        Just drop TACMWaveIn/TACMWaveOut on your form, and set some properties. 
+         (default values will be also good)
+     
+     2) 
+        Set up 'OnData'(TACMWaveIN) event if you use TACMWaveIN component.
+
+     3) 
+        Next, Call 'Open' method(TACMWaveIN/TACMWaveOUT) to open wave device, 
+        and 'Close' to close the opened device.
+
+     4)
+        Then, you can call 'PlayBack(Data:PChar; Size:Integer)' method to play wave
+        stream (ex. waveout1.playback(data, size))
+
+     5)
+        That's all !! but if you want to change or set wave format, just double-click 
+        'Waveformat' property in object inspector, or call 'Execute' method of WaveFormat 
+        property (ex. wavein1.WaveFormat.Execute)
+        ( WaveFormat property can use 'Assign' method. 
+          For example, waveout1.waveformat.assign(wavein1.waveformat) )
+
+
+        
+Bug-Reports:
+------------
+      
+      Please report any bugs or errors you found with detailed situation description to 
+      above-mentioned e-mail addresses.
+
+
+Order information:
+------------------
+      * register fee is US$ 30 (without source).
+      ==========================================
+
+      
+      Register by bank Transfer:
+      ------------------------- 
+             Citibank(Korea, Olympic park branch)
+             Bank Address: Lucky Securities Building, 184-1 Bangi-dong, Songpa-gu, 
+                           Seoul, South Korea, 138-150
+             Account No.: 12-70-123816
+             Beneficiary(Depositor): Jin-Hyun, Park
+
+
+      Mail Order:
+      ---------------
+            send a check or money to this address and recipient:
+                address   : Shinlim-9-dong , Kwanak-gu, 244-16, Seoul, South Korea,
+                            151-019(postal-code)
+                recipient : Sang-Hee, Kim
+      
+      
+     *IMPORTANT*
+        you MUST SEND E-MAIL to me with following information:
+           name,
+           compony,
+           city,
+           state,
+           country  
+           e-mail address(MUST) --> I send registered version *ONLY* BY E-MAIL !!
+                                    =============================================
+
+
+
+Have Fun !!
+

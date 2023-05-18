@@ -1,0 +1,44 @@
+			Cover Designer Pro
+			   Version 3.00
+
+			Thankyou for using 
+
+		      Cover Designer Pro 3.00
+  			 Copyright © 2000
+			 Chimera Software
+
+
+New in verson 3.00
+
+* As version's 1 & 2 were never released officially due to major bug
+  problems most features are new to version 3.00
+* Better error handling
+* Front Cover & Inside Jacket (Separate) option
+* More accurate printing
+* Improved Interface
+* Print Copies option, enabling user to print more than 1 copy of each
+  cover, also joint print option i.e. Print Front & Back Cover etc
+
+Known Bugs in version 3.00
+
+* When a file is double clicked in the Open dialog box the box 
+  re-appears, this is due to the position of the Cover box itself.
+  This problem is almost fixed an update should be out soon
+
+* If Scroll.txt file is not in the application path the program will
+  not load, again a small problem that is being worked on
+
+
+Compatibility problems
+
+* None that I'm aware of but CDP has only been tested on 4 PC's and
+  2 Epson printers
+
+
+If you find more bugs  or compatability problems please e-mail me so 
+I can keep improving CDP
+
+e-mail : andy_mccurtin@yahoo.com
+
+Thanks again for using Cover Designer Pro 3.00
+Any problems or questions feel free to e-mail me

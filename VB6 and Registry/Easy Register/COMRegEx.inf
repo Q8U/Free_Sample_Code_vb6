@@ -1,0 +1,107 @@
+;Setup for Xteq Systems COM Register Extension
+;Copyright © Xteq Systems - All Rights Reserved
+;
+;To install the software, right-click this file
+;inside the Explorer and select "Install" from 
+;the appearing menu.
+;
+;To uninstall, use Start - Settings - Control
+;Panel - Software.
+;
+;Please see README.TXT also.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Version]
+signature="$chicago$"
+
+[DefaultInstall]
+CopyFiles=Files.inf,Files.Add
+AddReg=Registry.Add,Registry.Uninstall
+
+[DefaultInstall.ntx86]
+CopyFiles=Files.inf,Files.Add
+AddReg=Registry.Add,Registry.Uninstall.NT
+
+[DefaultUninstall]
+DelFiles=Files.inf,Files.Add
+DelReg=Registry.Add,Registry.Uninstall,Registry.Uninstall.NT,Registry.Remove,
+
+[SourceDisksNames]
+1="%01%",,1
+
+[DestinationDirs]
+Files.Inf=17
+Files.Add=10
+
+[Files.Inf]
+COMRegEx.inf
+
+[Files.Add]
+Regsvr32.exe,Regsvr32.ex_
+
+[Registry.Uninstall]
+HKLM,%UnInstallPath%,DisplayName,,%UninstallDispName%
+HKLM,%UnInstallPath%,UninstallString,,"%10%\rundll.exe setupx.dll,InstallHinfSection DefaultUninstall 132 %17%\%InfFile%"
+
+[Registry.Uninstall.NT]
+HKLM,%UnInstallPath%,DisplayName,,%UninstallDispName%
+HKLM,%UnInstallPath%,UninstallString,,"%11%\rundll32.exe setupapi,InstallHinfSection DefaultUninstall 132 %17%\%InfFile%"
+
+[Registry.Add]
+HKCR,.ocx\shell\XQRegOCX,,,"%PopupDescRegOCX%"
+HKCR,.ocx\shell\XQRegOCX\command,,,"regsvr32 %1"
+HKCR,.ocx\shell\XQUnRegOCX,,,"%PopupDescUnregOCX%"
+HKCR,.ocx\shell\XQUnRegOCX\command,,,"regsvr32 /u %1"
+HKCR,dllfile\shell\XQRegDLL,,,"%PopupDescRegDLL%"
+HKCR,dllfile\shell\XQRegDLL\command,,,"regsvr32 %1"
+HKCR,dllfile\shell\XQUnRegDLL,,,"%PopupDescUnregDLL%"
+HKCR,dllfile\shell\XQUnRegDLL\command,,,"regsvr32 /u %1"
+HKCR,exefile\shell\XQRegEXE,,,"%PopupDescRegEXE%"
+HKCR,exefile\shell\XQRegEXE\command,,,"%1 /regserver"
+HKCR,exefile\shell\XQUnRegEXE,,,"%PopupDescUnregEXE%"
+HKCR,exefile\shell\XQUnRegEXE\command,,,"%1 /unregserver"
+
+[Registry.Remove]
+HKCR,exefile\shell\XQRegEXE\command
+HKCR,exefile\shell\XQRegEXE
+HKCR,exefile\shell\XQUnRegEXE\command
+HKCR,exefile\shell\XQUnRegEXE
+
+
+
+[Strings]
+InfFile="COMRegEx.inf"
+SetupRegPath="Software\Microsoft\Windows\CurrentVersion\Setup"
+
+PopupDescRegOCX="Re&gister OCX Control"
+PopupDescUnregOCX="&Unregister OCX Control"
+
+PopupDescRegDLL="Re&gister DLL Library"
+PopupDescUnregDLL="&Unregister DLL Library"
+
+PopupDescRegEXE="Re&gister EXE Server"
+PopupDescUnregEXE="&Unregister EXE Server"
+
+
+UninstallDispName="Xteq Systems COM Register Extension 2.0"
+UnInstallPath="Software\Microsoft\Windows\CurrentVersion\Uninstall\XteqCOMRegisterEx"
+
+
+
+
+
+
+;Copyright © Xteq Systems - All Rights Reserved

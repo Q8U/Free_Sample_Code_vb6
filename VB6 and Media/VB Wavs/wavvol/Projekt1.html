@@ -1,0 +1,160 @@
+<HTML><HEAD></HEAD><BODY text=#000000 link=#0000FF alink=#FF0000 vlink=#800080 bgcolor=#ffffff><center><table border=0 cellspacing=5 cellpadding=0 width=600><tr><td><font face=arial size=2>Dieser Tip stammt von:<br><a href="http://www.goetz-reinecke.de">http://www.goetz-reinecke.de</a></td><td align=right><font face=arial size=2>Fragen an:<br><a href="mailto:vb@goetz-reinecke.de">vb@goetz-reinecke.de</a></font></td></tr>
+<tr><td colspan=2>&nbsp;</td></tr><tr><td colspan=2 bgcolor=#ffffc0><font face=arial><center><big><big><big>Laustärke & Balance einstellen</big></big></big></center></font></td></tr><tr><td colspan=2><table border=0 width=600 bgcolor=#ffc080 cellpadding=10><tr><td><font face=arial size=2><b><big>Hinweis:</big></b> Sollten Sie nur im Besitz dieser HTML-Seite und nicht des zugeh&ouml;rigen Projektes sein, Gehen Sie folgendermaßen vor:<br><ul><li>&Ouml;ffnen Sie Visual Basic </li><li>Erstellen Sie ein neues Projekt</li><li>Markieren und kopieren den auf dieser Seite unten eingerahmten Source-Code</li><li>Fügen Sie den kopierten Text in Ihr Form ein</li><li>Erstellen Sie folgende Steuerelemente auf Ihrem Form</li><ul><ul><TT><PRE><FONT size=3 FACE=MS LineDraw color=#008000>Ein CommandButton:         Command3
+
+Ein Form:                  Form1
+
+Ein HScrollBar:            HScroll1
+
+Zwei Labels:               Label1
+                           Label2
+
+Ein Timer:                 Timer1
+
+Ein VScrollBar:            VScroll1
+</FONT></PRE></TT></ul></ul><li>Speichern Sie das ganze ab und starten Sie das Programm</li></ul></td></tr></table>
+&nbsp;<br><table border=1 cellspacing=0 cellpadding=0 bordercolor=#000080 width=100%><tr><td><table border=0 cellspacing=10 cellpadding=0 width=100%><tr><td><TT><PRE><FONT SIZE=2 FACE=MS LINEDRAW>
+<FONT COLOR=#008000>&#39;Dieser Source stammt von http://www.goetz-reinecke.de
+</FONT><FONT COLOR=#008000>&#39;und kann frei verwendet werden. F&uuml;r eventuelle Sch&auml;den
+</FONT><FONT COLOR=#008000>&#39;wird nicht gehaftet.
+</FONT>
+<FONT COLOR=#008000>&#39;Sollten Sie Fehler entdecken oder Fragen haben, dann
+</FONT><FONT COLOR=#008000>&#39;mailen Sie mir bitte unter: vb@goetz-reinecke.de
+</FONT><FONT COLOR=#008000>&#39;Ansonsten viel Spa&szlig; und Erfolg mit diesem Source !
+</FONT>
+<FONT COLOR=#008000>&#39;Kopieren Sie in das Verzeichnis des Projekte eine gr&ouml;&szlig;ere
+</FONT><FONT COLOR=#008000>&#39;*.wav Datei und benennen Sie diese zu &quot;test.wav&quot; um. Sonst
+</FONT><FONT COLOR=#008000>&#39;l&auml;uft die Sache nicht.
+</FONT>
+<FONT COLOR=#000080>Private Type</FONT> lVolType
+    v As <FONT COLOR=#000080>Long</FONT>
+<FONT COLOR=#000080>End Type</FONT>
+
+<FONT COLOR=#000080>Private Type</FONT> VolType
+    lv As <FONT COLOR=#000080>Integer</FONT>
+    rv As <FONT COLOR=#000080>Integer</FONT>
+<FONT COLOR=#000080>End Type</FONT>
+
+<FONT COLOR=#000080>Private Declare Function</FONT> waveOutGetVolume <FONT COLOR=#000080>Lib</FONT> &quot;winmm.dll&quot; _
+      (<FONT COLOR=#000080>ByVal</FONT> uDeviceID As <FONT COLOR=#000080>Long</FONT>, lpdwVolume As <FONT COLOR=#000080>Long</FONT>) As <FONT COLOR=#000080>Long</FONT>
+
+<FONT COLOR=#000080>Private Declare Function</FONT> waveOutSetVolume <FONT COLOR=#000080>Lib</FONT> &quot;winmm.dll&quot; _
+      (<FONT COLOR=#000080>ByVal</FONT> uDeviceID As <FONT COLOR=#000080>Long</FONT>, <FONT COLOR=#000080>ByVal</FONT> dwVolume As <FONT COLOR=#000080>Long</FONT>) _
+       As <FONT COLOR=#000080>Long</FONT>
+
+<FONT COLOR=#008000>&#39;Abspielen WAV
+</FONT><FONT COLOR=#000080>Private Declare Function</FONT> mciSendString <FONT COLOR=#000080>Lib</FONT> &quot;winmm.dll&quot; <FONT COLOR=#000080>Alias</FONT> _
+      &quot;mciSendStringA&quot; <FONT COLOR=#000080>ByVal</FONT> lpstrCommand As <FONT COLOR=#000080>String</FONT>, <FONT COLOR=#000080>ByVal</FONT> _
+      lpstrReturnString As String, <FONT COLOR=#000080>ByVal</FONT> uReturnLength As _
+      <FONT COLOR=#000080>Long</FONT>, <FONT COLOR=#000080>ByVal</FONT> hwndCallback As <FONT COLOR=#000080>Long</FONT>) As <FONT COLOR=#000080>Long</FONT>
+
+<FONT COLOR=#000080>Private Sub</FONT> Command3_Click()
+  <FONT COLOR=#000080>Dim</FONT> i As <FONT COLOR=#000080>Long</FONT>, RS As <FONT COLOR=#000080>String</FONT>, cb As <FONT COLOR=#000080>Long</FONT>, W$
+    RS = Space$(128)
+    i = mciSendString(&quot;stop sound&quot;, RS, 128, cb)
+    i = mciSendString(&quot;close sound&quot;, RS, 128, cb)
+    
+    <FONT COLOR=#008000>&#39;Abspielen
+</FONT>    RS = Space$(128)
+    
+    W$ = &quot;test.wav&quot; <FONT COLOR=#008000>&#39;Das ist die abzuspielende Sounddatei
+</FONT>    i = mciSendString(&quot;open waveaudio!&quot; &amp; W$ &amp; &quot; alias sound&quot;, _
+        RS, 128, cb)
+    <FONT COLOR=#000080>If</FONT> i <FONT COLOR=#000080>Then</FONT> MsgBox &quot;Fehler - Angegebene Datei nicht gefunden.&quot;
+    i = mciSendString(&quot;play sound&quot;, RS, 128, cb)
+
+    VScroll1.SetFocus
+<FONT COLOR=#000080>End Sub</FONT>
+
+<FONT COLOR=#000080>Private Sub</FONT> Form_Load()
+  HScroll1.Value = 0
+  VScroll1.Value = 2
+  Form1.Show
+  VScroll1.SetFocus
+<FONT COLOR=#000080>End Sub</FONT>
+
+<FONT COLOR=#000080>Private Sub</FONT> Timer1_Timer()
+  <FONT COLOR=#000080>Dim</FONT> id As <FONT COLOR=#000080>Long</FONT>, v As <FONT COLOR=#000080>Long</FONT>, i As <FONT COLOR=#000080>Long</FONT>
+    id = -1
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 1 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 0)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 1 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 0)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 1 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 0)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 1 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 0)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 1 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 0)
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 2 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 10280)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 2 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 379004968)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 2 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 673720360)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 2 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 673714578)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 2 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 673710080)
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 3 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 20560)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 3 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 757944400)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 3 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 1347440720)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 3 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 1347429155)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 3 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+         i = waveOutSetVolume(id, 1347420160)
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 4 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 31868)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 4 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 1174830204)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 4 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 2088533116)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 4 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 2088515191)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 4 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 2088501248)
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 5 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 42919)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 5 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 1582213031)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 5 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -1482184793)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 5 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -1482208934)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 5 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -1482227712)
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 6 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 54227)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 6 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 1554895827)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 6 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -741092397)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 6 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -741122899)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 6 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -741146624)
+    
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 7 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, 65535)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 7 <FONT COLOR=#000080>And</FONT> HScroll1.Value = -1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -1878982657)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 7 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 0 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -1)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 7 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 1 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -36865)
+    <FONT COLOR=#000080>If</FONT> VScroll1.Value = 7 <FONT COLOR=#000080>And</FONT> HScroll1.Value = 2 <FONT COLOR=#000080>Then</FONT> _
+        i = waveOutSetVolume(id, -65536)
+<FONT COLOR=#000080>End Sub</FONT>
+
+
+
+</FONT></PRE></TT>
+</td></tr></table></td></tr></table></td></tr></table></center></BODY></HTML>

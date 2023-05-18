@@ -1,0 +1,6 @@
+  The inclosed files show how to record a wave file and play back the
+recoreded file using mciSendString in Visual Basic.
+
+  I make no qaurantees about the sample code, use at your own risk.
+I hope this is helpfull to those of you who want to know how to record
+a wave file in Visual Basic.

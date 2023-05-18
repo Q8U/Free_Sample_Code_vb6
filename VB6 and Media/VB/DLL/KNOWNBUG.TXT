@@ -1,0 +1,239 @@
+Known bugs and limitations in Project Analyzer 5.1
+==================================================
+
+This file includes the known bugs and limitations in Project Analyzer.
+Project Analyzer is of high quality and these bugs occur mostly only in
+special cases. 
+
+Some of these limitations are on a to-do list, some can't be fixed at
+all. Those are disadvantages in the static (design-time) analysis method
+that Project Analyzer uses. 
+
+Please report any new bugs to vbshop@aivosto.com. If you can, attach a
+short code file or test project to facilitate debugging. Many bugs are
+next to impossible to fix without sample code.
+
+
+
+================
+For best results
+================
+
+- Always declare your local variables (use Option Explicit)
+- Always save your files as text (VB 3.0)
+- Use MS Word as your RTF editor
+- Wait for the analysis to end completely (it has 2 phases)
+- Use correct VB syntax. Project Analyzer relies on the correctness of
+  your code. If you analyze a project that VB cannot run, you may get
+  funny results.
+- Use good coding practice. Put only one statement on one code line. 
+
+
+===========
+Limitations
+===========
+
+- Project Analyzer has no known practical limit to the size of projects 
+  it can handle. It has been successfully used with projects that are 
+  several MB in size, and have over 100,000 lines of code.
+- The size of variable, constant and procedure names is restricted to 64
+  characters to save some memory. Longer names are truncated.
+- Super Project Analyzer can handle a group of max 50 projects at once
+
+- There are limits to the number of references in one procedure and
+  module. There is no hard limit for the total number of references.
+
+  Procedure reference limit:         Max
+  From a procedure to other procs    100 calls / procedure  Fan-out
+
+  Module reference limit:            Max
+  From a module to other modules     100 refs / module      Fan-out
+  To a module from other modules     200 refs / module      Fan-in
+
+  If you are concerned if your LARGE project has met one of these
+  limits, see the Metrics window for structural fan-outs = 100 or 
+  structural fan-ins = 200.
+
+  Variable, constant, Type and Enum references are not limited.
+
+
+==================
+Known misbehaviour
+==================
+
+- If you get "Automation error" or "Unexpected error" in Project Graph, 
+  make sure lgraph.ocx is in the same directory as project.exe, and 
+  re-register it with regsvr32.exe (comes on the VB CD).
+- Long procedural call tree reports (All procedures) can hang the computer
+- In the following code
+  For x = 1 to 10 : Debug.Print "Hello world" : Next
+  X is reported as Used only in assignment, even if it really is
+  both assigned and referenced by the For...Next statement.
+
+- If an array defined as New ObjType is later ReDim'd, the ReDim doesn't
+  count as an assignment but a reference, even if the ReDim creates new
+  objects in the array.
+- ReDim statements without the Preserve keyword may cause Project
+  Analyzer to think there is an extra local array variable. Example:
+
+  ' (declarations)
+  Dim MyArray() As Integer
+
+  Sub MyProcedure()
+  ReDim MyArray(100) As Integer
+
+  Project Analyzer may think MyArray is a new array if 
+  1) the original Dim is located in the (declarations) section of 
+     another module, AND
+  2) the module with Dim comes after the module with ReDim in your MAK
+     or VBP file.
+
+  The cure is to swap the order of the modules in MAK/VBP, or use 
+  ReDim Preserve, or mark the ReDim statement with '$ USED (see 
+  project.hlp for Comment directives). There is no way in the current 
+  2-phase analysis architecture of Project Analyzer to fix this problem.
+
+- Problems arise with long object.property.property chains for objects 
+  that have object-type properties. Example:
+  MyObject.MyChildObject.Prop = 2
+  (where property MyChildObject is a class object)
+
+  This should be Property Get MyChildObject and Let Prop.
+
+  Cause of problem: Choosing between Set/Let/Get is done according to the
+  last property in the chain. In the above case, it's a Let because of the
+  assignment to Prop. 
+
+  Result: This leads the analyzer to think it's a Let to MyChildObject 
+  too, although it should be a Get. Since there is no Let for Object
+  property (but Set instead), the analyzer ignores these references.
+
+
+- Given the following code in MyClass:
+  private sub a()
+    dim u as new MyClass
+    u.b
+  end sub
+
+  public sub b()
+  end sub
+
+  MyClass.b is reported as "needless global" despite that it couldn't be 
+  declared private.
+- Super Project Analyzer treats two files in different directories but with 
+  the same filename as one file. 
+
+
+Name shadowing bugs
+-------------------
+
+- In the hypertext window, letters in DefType statements may be 
+  mistaken for one-letter variable names
+- In the hypertext window, if you have two different definitions with the
+  same name (e.g. Form1.MyVar and Form2.MyVar), the program may
+  highlight the both in red when only the other one should be
+  highlighted. This bug has no effect on the real analysis. 
+- If a local var/const has the same name as the procedure it's in, the
+  procedure name will be mistaken for the var/const name in the
+  Hypertext window and Project Printer. This has no effect on the
+  analysis, though.
+- If a module has the same name as a procedure or a variable/constant, 
+  this can result in erroneous references not going to the module name.
+  No problem with Types and Enums (can't have same name).
+
+
+
+===============================
+Deficiencies in VB 3.0 features
+===============================
+
+- The Summary report shows somewhat distorted figures for 
+  1. Global Name Table: Type definitions and DLLs declarations are
+     not calculated correctly.
+  2. Global Symbol Table: type definitions are excluded, and everything 
+     else is assumed to take 10 bytes of memory.
+  Use freeware VB Space (by Gregg Irwin) for more exact calculations.
+  Available at http://www.aivosto.com/vblinks.html
+- Can't analyze files saved as binary. Save as text instead.
+
+
+=======================
+Unsupported VB features
+=======================
+
+- Line labels. If you use them, you may get incomplete results on those
+  lines that have a label. Line numbers are supported. 
+- The [] syntax is not fully supported. For example, in the below code,
+  Dim X As Integer
+  Print [X]
+  the reference to variable X is not detected because of the [] syntax.
+- Line continuation character "_" is supported by the analysis, but not 
+  by VB Browser or Project Printer. This has no other known effect 
+  than incorrectly reporting calls to Property Let/Set as Property Get. 
+  This happens if the "=" is not on the first line, like this:
+      MyProperty _
+         = Value
+
+
+===============================
+Unsupported VB 5.0/6.0 features
+===============================
+
+- Controls are not detected on ActiveX Designer Forms (.dsr/.dsx files)
+
+
+===================
+Unsolvable problems
+===================
+
+The following problems cannot be solved by design-time source code
+analysis. This is because they would need run-time information.
+
+- Late-bound references. Example:
+  Forms(2).DoSomething 
+
+  Project Analyzer can't know which form the call goes to, because 
+  Forms(2) may be of any of your forms. This applies to all object
+  references that are of a general type (e.g. As Form, As Object) 
+  and not a specific type (As MyForm, As MyObject).
+
+- Variants are classified as non-object variables, even if they contain
+  an object, because there is no way to detect this at design-time.
+  This may lead to minor flaws, like with the below code:
+
+   Dim v as Variant
+   Set v = Form1
+   v.Caption = "This is my form"
+     
+  Here the last statement is considered an assignment to v, although,
+  strictly speaking, it's a reference to v (and assignment to Caption). 
+  Fortunately, this doesn't do much harm. If v was defined as 
+  Dim v as Form (instead of Variant), the reference would be detected
+  just OK.
+
+- Inherits statement (polymorphism) supported partially. A procedure that 
+  implements an interface procedure is dead only if the procedure it 
+  implements is also dead. That's because polymorphed calls are bound 
+  finally at run-time.
+
+==============
+The FRX window
+==============
+
+- Supports the most usual data types and controls, like PictureBox.Picture,
+  ListBox.List, ListBox.ItemData, TextBox.Text, MouseIcon etc.
+- Some properties that are not supported (others exist):
+  AniButton.Picture, SSCommand.Picture
+
+======================
+Help Compiler Warnings
+======================
+You can ignore the following warning in HCW.EXE (if you use RTF to Help
+reports):
+
+'HC2002: Note: 
+    The keywords "xyz" and "Xyz" are identical except for case. 
+    Help Workshop has modified one keyword to match the other.'
+
+
+

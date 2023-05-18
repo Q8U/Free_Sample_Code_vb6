@@ -1,0 +1,36 @@
+Visual Basic Project Analyzer
+Source code analyzer for VB 3.0 - 6.0. 
+
+A tool for software engineers, Project Analyzer makes large software
+projects easier to understand. It documents commented and even
+uncommented code. It also contains numerous optimization and measurement
+features that help in fine-tuning and monitoring software development. 
+
+System requirements:
+* Windows 95/98/NT
+* Visual Basic 6.0 or the run-time DLLs 
+  (from http://www.aivosto.com/vbcatalog.html)
+* LGraph.Ocx (included in the distribution .zip file)
+
+A 16-bit version, as well as a 32-bit version for VB5 that does not
+require VB6 DLLs, are available at http://www.aivosto.com/vbcatalog.html
+
+
+Distribution licence: You can freely distribute the demo version of
+Project Analyzer, provided that you distribute it unmodified, including
+all the files. The full version may not be distributed.
+
+For more information:
+=> Features, prices: project.hlp
+=> Ordering:         order.hlp
+=> Tutorial:         tutorial.doc
+
+
+Aivosto Oy
+vbshop@aivosto.com
+
+VBShop - The Visual Basic Shop
+http://www.aivosto.com/vb.html
+Tools and tips for VB programmers
+
+

@@ -1,0 +1,1022 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0\fnil Arial;}{\f1\fnil System;}{\f2\fnil Symbol;}}
+{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue127;\red0\green127\blue127;\red0\green127\blue0;\red127\green0\blue127;\red127\green0\blue0;\red127\green127\blue0;\red127\green127\blue127;\red192\green192\blue192;}
+{\info{\creatim\yr1999\mo3\dy1\hr9\min55\sec24}{\revtim\yr1999\mo3\dy1\hr9\min55\sec24}{\version1}{\vern209440}}\paperw12240\paperh15840\margl14\margr-5019\margt14\margb-1419\deftab720
+#{\footnote Hlp_Launching_Ships}
+${\footnote Launching/Landing Ships}
+K{\footnote Launching Ships}
++{\footnote final:0060}
+\pard
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 Launching/Landing Ships}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 To Launch:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 After enabling the {\ul planet management frame}{\v planet_management_frame }, click on the Launch button to go to }
+\ql{\f0\fs24\cf0\up0\dn0 the Launch Screen:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 \{bmc LAUNCH.BMP\}}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 1. Select either ship 1 or ship 2.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li269\fi-269\ri-28096{\f0\fs0\cf0\up0\dn0 2. }{\f0\fs24\cf0\up0\dn0 Select the number of human troops and/or mechs (if you have researched this }
+\ql{\f0\fs24\cf0\up0\dn0 technology). }{
+\par}\pard
+\ql\li269\fi-269\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li269\fi-269\ri-28096{\f0\fs0\cf0\up0\dn0 3. }{\f0\fs24\cf0\up0\dn0 Select  options from the advanced tactics frame: {\ul Sabotage Missions}{\v Sabotage_Missions } and the }
+\ql{\f0\fs24\cf0\up0\dn0 {\ul Cloaking Device}{\v Cloaking_Device } are available once the proper technologies have been }
+\ql{\f0\fs24\cf0\up0\dn0 researched.  To launch a s}{\f0\fs0\cf0\up0\dn0 abotage mission, you must have researched Assault }
+\ql{\f0\fs0\cf0\up0\dn0 Troops (Mechs) and Level II Ship Shields.}{
+\par}\pard
+\ql\li269\fi-269\ri-28096{\f0\fs0\cf0\up0\dn0
+\par}\pard
+\ql\li269\fi-269\ri-28096{\f0\fs0\cf0\up0\dn0 4. }{\f0\fs24\cf0\up0\dn0 Click the Launch Button or Cancel the launch and return to the game screen.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 When you return to the game screen, your ship will be shown on your warp path, }
+\ql{\f0\fs24\cf0\up0\dn0 along with its number (1 or 2), combat strength and sector of origin:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 \{bml WARPPATH.BMP\}}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Only the sector of origin will be displayed on your opponent's screen, giving the }
+\ql{\f0\fs24\cf0\up0\dn0 enemy a rough idea of where you came from and where you might end up.  }
+\ql{\f0\fs24\cf0\up0\dn0 Should the other player research the warp scanner, however, they will be able to }
+\ql{\f0\fs24\cf0\up0\dn0 determine the possible destinations of your ship.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0                                                  }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Landing:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 To preview possible landing sites, hold down the preview button next to the warp }
+\ql{\f0\fs24\cf0\up0\dn0 path.  Yellow circles will appear around any planets that are within landing range.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 To land, click the button for either Ship1 or Ship 2.  The planets within range will }
+\ql{\f0\fs24\cf0\up0\dn0 remain circled until you select a landing site or click elsewhere on the game }
+\ql{\f0\fs24\cf0\up0\dn0 screen.  When you select a planet you will be prompted to confirm your choice.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Depending on where you land, other actions may follow. If you land on a planet }
+\ql{\f0\fs24\cf0\up0\dn0 you already own, the troops/mechs on board are added to the planet's }
+\ql{\f0\fs24\cf0\up0\dn0 population without incident.  If you land on a neutral planet, it is claimed for your }
+\ql{\f0\fs24\cf0\up0\dn0 empire and you are taken to the {\ul Landscape View}{\v Landscape_View }.  If you land on one of your }
+\ql{\f0\fs24\cf0\up0\dn0 opponent's planets or one held by the {\ul Melnikons}{\v Melnikons }, {\uldb combat}{\v Hlp_Combat} will ensue.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 *Note: when you land on a planet for the first time, you may not launch from that }
+\ql{\f0\fs24\cf0\up0\dn0 planet until your next turn.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Planet_Management}
+${\footnote Planet Management}
+K{\footnote Planet Management}
++{\footnote final:0050}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Planet Management}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml MGMT.BMP\}The {\ul planet management frame}{\v planet_management_frame } is activated }
+\ql{\f0\fs24\cf0\up0\dn0 whenever you click on one of your planets.  At the top of the frame }
+\ql{\f0\fs24\cf0\up0\dn0 is the name of the planet.  Click on the name to go to the }
+\ql{\f0\fs24\cf0\up0\dn0 {\ul Landscape View}{\v Landscape_View } (also accessible with a double-click on the planet }
+\ql{\f0\fs24\cf0\up0\dn0 itself).  The commands on the top half of this frame allow you to }
+\ql{\f0\fs24\cf0\up0\dn0 recruit troops and mechs, research technology and buy items made }
+\ql{\f0\fs24\cf0\up0\dn0 possible through research (including missile bases, planetary }
+\ql{\f0\fs24\cf0\up0\dn0 shields, improved resource production facilities, scanners and }
+\ql{\f0\fs24\cf0\up0\dn0 scanner jamming devices). }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li2924\fi-1440\ri-26656{\f0\fs24\cf0\up0\dn0   }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml MISSILE.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Missile base:}{\f0\fs24\cf0\up0\dn0 Installs a missile base on the }
+\ql{\f0\fs24\cf0\up0\dn0 planet, adding 5 points to the planet's combat strength. }
+\ql{\f0\fs24\cf0\up0\dn0 REQUIRES: Missile1 research.  Another 5 points are added once }
+\ql{\f0\fs24\cf0\up0\dn0 Missile 2 research is completed.  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST: 10 resources.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml SHLDUPGR.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Planetary shield:}{\f0\fs24\cf0\up0\dn0   Launches a network of }
+\ql{\f0\fs24\cf0\up0\dn0 satellites to form a protective shield around the planet, adding 10 }
+\ql{\f0\fs24\cf0\up0\dn0 points to the planet's combat strength.  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 REQUIRES: Planetary Shield research}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST:  15 resources}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0                                                                                                     }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml FACTUPGR.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Improved Resource Production Facility:}{\f0\fs24\cf0\up0\dn0   }
+\ql{\f0\fs24\cf0\up0\dn0  Increases the planet's resource production capacity by up to 80%}{\b\f0\fs24\cf0\up0\dn0  }
+\ql{\f0\fs24\cf0\up0\dn0 of its original level.  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 REQUIRES:  improved production research}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST:  15 resources}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml TROOP.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Recruit Human Troops:   }{\f0\fs24\cf0\up0\dn0 Add to the planet's }
+\ql{\f0\fs24\cf0\up0\dn0 complement of human troops, each troop adding 1 point to the }
+\ql{\f0\fs24\cf0\up0\dn0 planet's combat strength, although this number will go up once }
+\ql{\f0\fs24\cf0\up0\dn0 laser and plasma weapons have been researched.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST:  1 resource}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml MECH.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Build Mechs:}{\f0\fs24\cf0\up0\dn0   These mechanized assault units }
+\ql{\f0\fs24\cf0\up0\dn0 add 4 points to a planet or ship's combat strength, and can }
+\ql{\f0\fs24\cf0\up0\dn0 withstand the intense atmospheric damage caused by biochemical }
+\ql{\f0\fs24\cf0\up0\dn0 weapons that human troops are unable to endure.  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 REQUIRES: Mechanized Assault Troop research}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST:  3 resources each}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml SCANNER.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Scanners:}{\f0\fs24\cf0\up0\dn0   Installing a scanner will allow }
+\ql{\f0\fs24\cf0\up0\dn0 you to survey all the available data on planets within scanning }
+\ql{\f0\fs24\cf0\up0\dn0 range, including troop and mech numbers and the planet's combat }
+\ql{\f0\fs24\cf0\up0\dn0 strength.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 REQUIRES:  Scanner research.  Long-range scanner research }
+\ql{\f0\fs24\cf0\up0\dn0 significantly expands the radius of new and existing scanners.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST:  25}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml JAMMER.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Anti-Scanner Jamming Device:}{\f0\fs24\cf0\up0\dn0   This device }
+\ql{\f0\fs24\cf0\up0\dn0 prevents your opponent from successfully scanning the planet, }
+\ql{\f0\fs24\cf0\up0\dn0 hiding all information (except the level of resource production).  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 REQUIRES:  Scanner jamming research.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 COST:  15 resources}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bml RESEARCH.BMP\}}{\b\f0\fs24\cf0\up0\dn0 Research: }{\f0\fs24\cf0\up0\dn0   Double-clicking this icon takes }
+\ql{\f0\fs24\cf0\up0\dn0 you to the research screen, where you can select new technologies }
+\ql{\f0\fs24\cf0\up0\dn0 to discover and allocate teams of scientists to accomplish this as }
+\ql{\f0\fs24\cf0\up0\dn0 quickly as possible.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 After selecting one of the purchasing options noted above, you }
+\ql{\f0\fs24\cf0\up0\dn0 choose the number of items to purchase.  The cost of the }
+\ql{\f0\fs24\cf0\up0\dn0 purchase, (in resources) is indicated, and the purchase is }
+\ql{\f0\fs24\cf0\up0\dn0 completed by clicking the OK button.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0 Other Planet Management Features:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Using the command buttons in the lower half of the frame, you are }
+\ql{\f0\fs24\cf0\up0\dn0 able to: {\uldb launch ships}{\v Hlp_Launching_Ships}, {\uldb target biochemical rockets}{\v Hlp_Combat} and use any }
+\ql{\f0\fs24\cf0\up0\dn0 available {\uldb scanning}{\v Hlp_Research} technology.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Research}
+${\footnote Research}
+K{\footnote Research}
++{\footnote final:0100}
+
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 Research}{
+\par}\pard
+\ql\li0\fi0\tx2969\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Clicking on the research icon in the {\uldb planet management screen}{\v Hlp_Planet_Management} takes you to the }
+\ql{\f0\fs24\cf0\up0\dn0 research screen, where you can choose from the available technologies and }
+\ql{\f0\fs24\cf0\up0\dn0 assign teams of scientists to complete these projects.  As each technology is }
+\ql{\f0\fs24\cf0\up0\dn0 researched, new opportunities for research become available.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 The more teams assigned to a problem, the faster a solution will be found.  The }
+\ql{\f0\fs24\cf0\up0\dn0 costs of research vary depending on the topic selected and the number of teams }
+\ql{\f0\fs24\cf0\up0\dn0 assigned to the problem.  In general, however, assigning more than 4 teams to a }
+\ql{\f0\fs24\cf0\up0\dn0 problem does not speed up the research process any further.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Complete List of Research Topics:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Planetary:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Missile Base I}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Missile Base II:}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Missile Base I}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Planetary Shield}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Missile Base II}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Military:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Laser Rifles}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Plasma Rifles}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Laser Rifles}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Mechanized Assault Units}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Plasma Rifles}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Biohazard Rockets}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Mechanized Assault Troops}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Warp Ships:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Shields I}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Shields II}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Shields I}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Expanded ship capacity}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:   Shields I}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Ultra-Warp Engines }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Expanded ship capacity}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 {\ul Cloaking Device}{\v Cloaking_Device }}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:   Ultra-Warp Engines}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Scanners:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Short-range scanner}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Long-range scanner}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Short-range scanner}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Warp path scanner}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Long-range scanner}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Anti-scanner jamming device}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Long-range scanner}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Resources:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Improved Resource Production}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Biohazard Cleanup}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Improved Resource Production AND BioHazard Rocket}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Environment Regeneration}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 REQUIRES:  Biohazard Cleanup}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Combat}
+${\footnote Combat}
+K{\footnote Combat}
++{\footnote order:0060}
+
+\ql\li0\fi0\ri-25216{\f0\fs48\cf1\up0\dn0 Combat}{
+\par}\pard
+\ql\li0\fi0\ri-25216{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-25216{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Overview}
+${\footnote Introduction}
+K{\footnote Overview}
++{\footnote final:0010}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Introduction}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 4000 A.D. is a variation on the familiar 4X strategy game - eXplore, }
+\ql{\f0\fs24\cf0\up0\dn0 eXpand, eXploit and eXterminate.  By spreading your empire }
+\ql{\f0\fs24\cf0\up0\dn0 across the galaxy, maximizing resource production and }
+\ql{\f0\fs24\cf0\up0\dn0 researching new technologies, you can try to crush your enemy }
+\ql{\f0\fs24\cf0\up0\dn0 and take your rightful place as ruler of the known universe.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 The game is turn-based, with each player completing their turn and }
+\ql{\f0\fs24\cf0\up0\dn0 emailing the resulting file to their opponent.  Besides a copy of this }
+\ql{\f0\fs24\cf0\up0\dn0 program, you will need access to internet email to send turns back }
+\ql{\f0\fs24\cf0\up0\dn0 and forth.  Hot-seat play is also possible, but not the best way to }
+\ql{\f0\fs24\cf0\up0\dn0 spend an evening.  The game was designed so that a turn can be }
+\ql{\f0\fs24\cf0\up0\dn0 completed and emailed within 5-10 minutes.  Why? So you can }
+\ql{\f0\fs24\cf0\up0\dn0 play it at work without being fired, and because most people don't }
+\ql{\f0\fs24\cf0\up0\dn0 have 3-5 hours at a time for the more intensive strategy games out }
+\ql{\f0\fs24\cf0\up0\dn0 there (Starcraft, Total Annihiliation, Age of Empires etc.).  I know I }
+\ql{\f0\fs24\cf0\up0\dn0 don't.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 At the start of each new game, the planets are re-initialized with a }
+\ql{\f0\fs24\cf0\up0\dn0 random level of resource production, so no two games will have the }
+\ql{\f0\fs24\cf0\up0\dn0 same distribution of resources.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Gameplay is open-ended with the players deciding when the game }
+\ql{\f0\fs24\cf0\up0\dn0 ends, by total conquest or humiliating surrender.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_CreditsxOther_Information}
+${\footnote Credits/Copyright}
+K{\footnote Credits/Other Information}
++{\footnote final:0140}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Credits/Copyright Info}{
+\par}\pard\qj\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard\qc\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0  Game design and programming c. 1998-99 Gordon Stewart}{
+\par}\pard\qc\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Cool suggestions:}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 Craig Stewart}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0 Programming Notes:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 This program was written in Visual Basic 4, 32-bit pro version.  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Third-party control kudos to:  }{
+\par}\pard
+\ql\li0\fi0\tx449\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 *}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 VBHelpWriter, for their excellent help authoring program.  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 Get your copy at:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 http://www.teletech-systems.com/}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 *}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 The zlib compression tool, which is available from: }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 Mark Nelson at Tiny Software: }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 markn@tiny.com, http://web2.airmail.net/markn}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\tx540\ri-26656{\f0\fs24\cf0\up0\dn0 Note:  These are unpaid testimonials; no oversized novelty }
+\ql{\f0\fs24\cf0\up0\dn0 cheques were exchanged to procure these advertisements.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0 Copyright Note:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 This program is my copyrighted work and I expressly forbid the sale }
+\ql{\f0\fs24\cf0\up0\dn0 of this game by anyone (other than me).  I also forbid its inclusion }
+\ql{\f0\fs24\cf0\up0\dn0 on any compilation of programs or other distribution of software for }
+\ql{\f0\fs24\cf0\up0\dn0 sale without my express written consent. The same goes for my }
+\ql{\f0\fs24\cf0\up0\dn0 major league baseball telecasts.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 The source code for this program is also my copyrighted work, but }
+\ql{\f0\fs24\cf0\up0\dn0 is available for download at the 4000 A.D. website:  }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 www.interlog.com/~gordons/4000ad.html}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 VB programmers are welcome to use this code for learning }
+\ql{\f0\fs24\cf0\up0\dn0 purposes, and as the basis for their own original works (change the }
+\ql{\f0\fs24\cf0\up0\dn0 title at least...).}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Registration}
+${\footnote Registration/Contact Information}
+K{\footnote Registration}
++{\footnote final:0130}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Registration}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 This program is Grovelware.  I'm not asking for a registration fee, }
+\ql{\f0\fs24\cf0\up0\dn0 but I am shamelessly begging for money so I can continue to }
+\ql{\f0\fs24\cf0\up0\dn0 dedicate time and effort to future improvements to this game and to }
+\ql{\f0\fs24\cf0\up0\dn0 the development of others.  If you enjoy the game, please send }
+\ql{\f0\fs24\cf0\up0\dn0 $15 to this address*:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 164 Lawrence Avenue West}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Toronto, Ontario}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 M5M 1A8}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Canada}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 * Please, no obsessed fans/stalkers. It's just a game.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 If you have comments, suggestions, or just complaints, you can }
+\ql{\f0\fs24\cf0\up0\dn0 include them with your $15 or email me at gordons@interlog.com}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0 Game Updates:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 For the latest updates, patches and information, as well as the }
+\ql{\f0\fs24\cf0\up0\dn0 complete working source code, visit the 4000 A.D. home page at }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 www.interlog.com/~gordons/4000ad.html}{
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Beginning_a}
+${\footnote Beginning a New Game}
+K{\footnote Beginning a New Game}
++{\footnote final:0040}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Beginning a New Game}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 From the opening screen, select "New Game", which will take you }
+\ql{\f0\fs24\cf0\up0\dn0 to the New Game screen.  Here you can select various game setup }
+\ql{\f0\fs24\cf0\up0\dn0 options, choose a name for yourself and for you home planet, and }
+\ql{\f0\fs24\cf0\up0\dn0 decide which corner of the galaxy to set yourself up in:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 \{bmc NEWGAME.BMP\}}{\f0\fs24\cf0\up0\dn0\tab}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0 Galaxy Size:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 You may choose one of three sizes of galaxy, which will affect the }
+\ql{\f0\fs24\cf0\up0\dn0 number of troops and resources you start the game out with.  }
+\ql{\f0\fs24\cf0\up0\dn0 Beginners should select either the large (50 planets) or medium (40 }
+\ql{\f0\fs24\cf0\up0\dn0 planets) galaxy, as the small size (30 planets) is more of a }
+\ql{\f0\fs24\cf0\up0\dn0 challenge with respect to resource management.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0 Starting Sector:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Choose one corner of the galaxy to call home; your opponent will }
+\ql{\f0\fs24\cf0\up0\dn0 begin in the opposite corner. You can also name your home planet, }
+\ql{\f0\fs24\cf0\up0\dn0 or accept a randomly-selected default name.   }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Once you have chosen a name for yourself and selected a starting }
+\ql{\f0\fs24\cf0\up0\dn0 sector, the Start Game button will be enabled.  Clicking this button }
+\ql{\f0\fs24\cf0\up0\dn0 will take you to the {\uldb main game screen}{\v Hlp_Playing_the} to begin the game.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Playing_the}
+${\footnote Playing the Game}
+K{\footnote Playing the Game}
++{\footnote final:0030}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Playing the Game}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 The main game screen is where most of the tactical decisions are }
+\ql{\f0\fs24\cf0\up0\dn0 made, and allows you to carry out all of the functions of the game:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 {\uldb Launching/Landing Ships}{\v Hlp_Launching_Ships}}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 {\uldb Planet Management}{\v Hlp_Planet_Management}}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 {\uldb Combat}{\v Hlp_Combat}}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 {\uldb Research new technologies}{\v Hlp_Research}}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 {\uldb Sending/Receiving Messages}{\v Hlp_SendingxReceiving_Messages}}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 {\uldb Saving Games}{\v Hlp_LoadingxSaving_Games}}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_LoadingxSaving_Games}
+${\footnote Loading/Saving Games}
+K{\footnote Loading/Saving Games}
++{\footnote final:0120}
+
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 Loading/Saving Games}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Loading a Game:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 From the opening screen, select "Load Game" from the menu, or hit the F1 key.  }
+\ql{\f0\fs24\cf0\up0\dn0 This will bring up a game selection screen which allows you to load any valid }
+\ql{\f0\fs24\cf0\up0\dn0 4000 A.D. game file.  Games are saved in a compressed format ending in ".zlb".}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 You can save/load game files anywhere in your computer, although it is a good }
+\ql{\f0\fs24\cf0\up0\dn0 idea to keep them in one place, preferably in the same directory as the game }
+\ql{\f0\fs24\cf0\up0\dn0 itself (or in a subdirectory).}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Click on a game filename, then click the "Start Game" button (or double-click the }
+\ql{\f0\fs24\cf0\up0\dn0 filename) to begin.  If you are Player 2 and it is your first turn, you will be }
+\ql{\f0\fs24\cf0\up0\dn0 prompted to supply a name for yourself and for your home planet. If you do not }
+\ql{\f0\fs24\cf0\up0\dn0 supply a name for your planet, a random name will be assigned.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Saving a Game:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Click on the Save Game button at the lower left corner of the main game screen. }
+\ql{\f0\fs24\cf0\up0\dn0 This will bring up the Save Game screen, where you may select one of 5 games  }
+\ql{\f0\fs24\cf0\up0\dn0 to save the turn in.  The game number to be saved is selected by default to }
+\ql{\f0\fs24\cf0\up0\dn0 prevent accidentally overwriting another game, although you can select another }
+\ql{\f0\fs24\cf0\up0\dn0 game to save into.  }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 The saved game file is automatically named to allow for easy identification when }
+\ql{\f0\fs24\cf0\up0\dn0 {\ul sending the turn by email}{\v sending_the_turn_by_email } to your opponent (with your choice of internet mail }
+\ql{\f0\fs24\cf0\up0\dn0 program):}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Saved Game Format:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Saved games are made up of three elements: (i) the game number (g1, g2, up to }
+\ql{\f0\fs24\cf0\up0\dn0 g5), (ii) the turn number of that game and (iii) the Player number.  Games saved }
+\ql{\f0\fs24\cf0\up0\dn0 by Player 1 will end in the letter 'a', and games saved by Player 2 will end in the }
+\ql{\f0\fs24\cf0\up0\dn0 letter 'b'.  Here are two examples: }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 g1-t5a.zlb}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 Game 1, turn 5, saved by Player 1}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 ^^  ^^ ^}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 g3-t7b.zlb}{\f0\fs24\cf0\up0\dn0\tab}{\f0\fs24\cf0\up0\dn0 Game 3, turn 7, saved by Player 2}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 ^^  ^^ ^  }{
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_SendingxReceiving_Messages}
+${\footnote Sending/Receiving Messages}
+K{\footnote Sending/Receiving Messages}
++{\footnote final:0110}
+
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 Sending/Receiving Messages}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 The communication console in the upper left corner of the main game screen }
+\ql{\f0\fs24\cf0\up0\dn0 notifies you at the beginning of each turn if you have a new message from your }
+\ql{\f0\fs24\cf0\up0\dn0 opponent.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Click on the View/Send button to bring up the console and read or send a }
+\ql{\f0\fs24\cf0\up0\dn0 message to your opponent.}{
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_BioChemical_Warfare}
+${\footnote BioChemical Warfare}
+K{\footnote BioChemical Warfare}
++{\footnote final:0080}
+
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 BioChemical Warfare}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 The damage done to a planet's resource production capacity by a biochemical }
+\ql{\f0\fs24\cf0\up0\dn0 rocket attack goes beyond anything that can be repaired, the way industry can }
+\ql{\f0\fs24\cf0\up0\dn0 be repaired after a sabotage attack.  The planet must first be detoxified, and only }
+\ql{\f0\fs24\cf0\up0\dn0 then can its capacity to produce resources be regenerated.  Both of these steps }
+\ql{\f0\fs24\cf0\up0\dn0 require technologies that must be researched.  Without detoxification the planet }
+\ql{\f0\fs24\cf0\up0\dn0 cannot support human life, and each turn some of your human troops stationed }
+\ql{\f0\fs24\cf0\up0\dn0 on the planet will die slow, agonizing deaths.  Mechanized Assault troops }
+\ql{\f0\fs24\cf0\up0\dn0 (Mechs), however, are not affected by the toxic environment.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Launching Biohazard Rockets:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Once you have researched this technology, you can launch these horrific and }
+\ql{\f0\fs24\cf0\up0\dn0 destructive chemical weapons at your opponents' planets.  Further research will }
+\ql{\f0\fs24\cf0\up0\dn0 extend the range of these rockets.  Each rocket launch costs 30 Resources.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 After launching you will be informed of the rocket's ETA, and again when the }
+\ql{\f0\fs24\cf0\up0\dn0 rocket hits its target.  The rockets are not foolproof, however, and the chances of }
+\ql{\f0\fs24\cf0\up0\dn0 the rocket being destroyed before impact will vary depending on the target }
+\ql{\f0\fs24\cf0\up0\dn0 planet's defenses.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 The initial explosion of a rocket has a devastating effect on human troops, with a }
+\ql{\f0\fs24\cf0\up0\dn0 reduced impact on mechs, and resource production is usually wiped out }
+\ql{\f0\fs24\cf0\up0\dn0 completely.  Until the planet's environment is cleaned up (requiring Detoxification }
+\ql{\f0\fs24\cf0\up0\dn0 research), casualties among human troops will continue to be high, whereas }
+\ql{\f0\fs24\cf0\up0\dn0 mechs are not affected after the initial impact.  Once a planet's environment has }
+\ql{\f0\fs24\cf0\up0\dn0 been detoxified, its resource production capacity can be regenerated (requiring }
+\ql{\f0\fs24\cf0\up0\dn0 Resource Regeneration research).}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Sabotage_Missions}
+${\footnote Sabotage Missions}
+K{\footnote Sabotage Missions}
++{\footnote final:0090}
+
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 Sabotage Missions}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 Launching the Mission:}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 After selecting a ship to launch from the launch screen, click on the 'sabotage }
+\ql{\f0\fs24\cf0\up0\dn0 mission' checkbox. This will automatically prepare the ship for a sabotage }
+\ql{\f0\fs24\cf0\up0\dn0 mission, which requires only 1 mech to carry out (you must have at least 1 mech }
+\ql{\f0\fs24\cf0\up0\dn0 on the planet to operate the ship).}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 If you have researched the {\ul Cloaking Device}{\v Cloaking_Device } you may check that box as well to }
+\ql{\f0\fs24\cf0\up0\dn0 maintain the element of surprise.  When you land the ship on an enemy planet }
+\ql{\f0\fs24\cf0\up0\dn0 you will be notified as to the mission's success (or failure, depending on the level }
+\ql{\f0\fs24\cf0\up0\dn0 of the planet's defenses), and the damage done to the planet's resource }
+\ql{\f0\fs24\cf0\up0\dn0 production.  The success of the mission may be threatened by a number of }
+\ql{\f0\fs24\cf0\up0\dn0 factors, including the planet's population and whether any missile bases or }
+\ql{\f0\fs24\cf0\up0\dn0 scanners have been installed.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Ships on sabotage missions are marked with an "S" on your warp path, but your }
+\ql{\f0\fs24\cf0\up0\dn0 opponent will not see this identifier.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 {\ul Repairing Industry}{\v Repairing_Industry }}{\f0\fs24\cf0\up0\dn0 :  }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 If any of your planets have been sabotaged and their resource production falls }
+\ql{\f0\fs24\cf0\up0\dn0 below 4 units/turn, you can rebuild your basic industrial facilities.  If you had }
+\ql{\f0\fs24\cf0\up0\dn0 already built an Advanced Resource Production Facility, it will have been }
+\ql{\f0\fs24\cf0\up0\dn0 destroyed by the saboteurs and must be rebuilt.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 *Note: you should repair your industries as much as possible before building }
+\ql{\f0\fs24\cf0\up0\dn0 another Advanced Resource Production Facility, as the Facility improves }
+\ql{\f0\fs24\cf0\up0\dn0 resource production as a percentage of the planet's current resource production.}{
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Combat_Overview}
+${\footnote Combat Overview}
+K{\footnote Combat Overview}
++{\footnote final:0070}
+
+\ql\li0\fi0\ri-28096{\f0\fs48\cf1\up0\dn0 Combat Overview}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 When you land on a neutral planet, your forces claim it for your empire without }
+\ql{\f0\fs24\cf0\up0\dn0 any trouble from the locals.  When you land on a planet held by your opponent or }
+\ql{\f0\fs24\cf0\up0\dn0 by the {\ul Melnikons}{\v Melnikons }, however, your ship goes into Attack mode. }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 Victory is determined by a comparison of each side's {\ul Combat Strength}{\v Combat_Strength }, with ties }
+\ql{\f0\fs24\cf0\up0\dn0 going to the defender.}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 The results of the combat are displayed in the {\ul Landscape View}{\v Landscape_View } window. If you }
+\ql{\f0\fs24\cf0\up0\dn0 win, the planet is yours.  If you lose, your attacking force is wiped out, but not }
+\ql{\f0\fs24\cf0\up0\dn0 before they send back a report on the planet indicating the level of defenses, }
+\ql{\f0\fs24\cf0\up0\dn0 technology and resource production.  }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 *Note: if you successfully invade a planet with advanced technologies such as }
+\ql{\f0\fs24\cf0\up0\dn0 missile bases, planetary shields or scanners, those items are destroyed in the }
+\ql{\f0\fs24\cf0\up0\dn0 battle.  Advanced resource production facilities remain are not  destroyed, }
+\ql{\f0\fs24\cf0\up0\dn0 however, and the increased production continues as the spoils of victory. }{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-28096{\b\f0\fs24\cf0\up0\dn0 The Alien Menace}{
+\par}\pard
+\ql\li0\fi0\ri-28096{\f0\fs24\cf0\up0\dn0 There is also a chance that your weaker planets will be subjected to an alien }
+\ql{\f0\fs24\cf0\up0\dn0 invasion. The cowardly Melnikons prey on poorly-defended planets only, so it is }
+\ql{\f0\fs24\cf0\up0\dn0 advised that planets have at least 4 troops or 1 mech to defend against this }
+\ql{\f0\fs24\cf0\up0\dn0 threat.  }{
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+#{\footnote Hlp_Getting_Help}
+${\footnote Getting Help During the Game}
+K{\footnote Getting Help During the Game}
++{\footnote final:0020}
+
+\ql\li0\fi0\ri-26656{\f0\fs48\cf1\up0\dn0 Getting Help During the Game}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 You can access the main 4000A.D. help file at any point during the }
+\ql{\f0\fs24\cf0\up0\dn0 game by hitting the F1 key. }{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Hit the Escape button to get a list of some quick commands you }
+\ql{\f0\fs24\cf0\up0\dn0 may find useful, including:}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 F1   This Help File}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 F2   Save Game}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 F3   Abort Game}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 F4   Toggle Grid Lines On and Off}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 F5   Toggle Sound On and Off}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 F6    Restore Screen}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0 Turning the grid lines on is useful for narrowing down an enemy }
+\ql{\f0\fs24\cf0\up0\dn0 ship's point of origin. The ship's {\ul starting coordinates}{\v starting_coordinates } (ie. A5, D3) }
+\ql{\f0\fs24\cf0\up0\dn0 are given to the left of the ship on the warp path, and with the grid }
+\ql{\f0\fs24\cf0\up0\dn0 lines on you can see which planets are in that sector.   By noting }
+\ql{\f0\fs24\cf0\up0\dn0 how far along the warp path an enemy ship has gone, you can }
+\ql{\f0\fs24\cf0\up0\dn0 guess where it might be headed and prepare accordingly.  Once }
+\ql{\f0\fs24\cf0\up0\dn0 you have researched the warp scanner, however, you will have a }
+\ql{\f0\fs24\cf0\up0\dn0 much better idea where enemy ships are headed.}{
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql\li0\fi0\ri-26656{\b\f0\fs24\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0
+\par}\pard
+\ql{\f0\fs18\cf0\up0\dn0 Helpfile generated by VB HelpWriter.}{
+\par}\pard
+\page
+\ql{\f1\fs20\cf0\up0\dn0 #{\footnote 64000 }#{\footnote GLOSSARY }${\footnote Glossary }K{\footnote Glossary; Definitions }+{\footnote 4000:10000}}{\f0\fs48\cf1\up0\dn0 Glossary}{
+\par}\pard\ql{\f0\fs48\cf1\up0\dn0 \{bmc glossary.shg\}}\keepn{}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0 #{\footnote Glossary__A }#{\footnote Glossary__B }#{\footnote Glossary__C }}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0                                                                                                                                                                       C}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul Cloaking Device}{\v Cloaking_Device}\tab\tab}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul Combat Strength}{\v Combat_Strength}\tab\tab}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0 #{\footnote Glossary__D }#{\footnote Glossary__E }#{\footnote Glossary__F }#{\footnote Glossary__G }#{\footnote Glossary__H }#{\footnote Glossary__I }#{\footnote Glossary__J }#{\footnote Glossary__K }#{\footnote Glossary__L }}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  L}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul Landscape View}{\v Landscape_View}\tab\tab}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0 #{\footnote Glossary__M }}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0                                                         M}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul Melnikons}{\v Melnikons}\tab\tab}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0 #{\footnote Glossary__N }#{\footnote Glossary__O }#{\footnote Glossary__P }}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0                                                                                                                                                                       P}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul planet management frame}{\v planet_management_frame}\tab\tab}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0 #{\footnote Glossary__Q }#{\footnote Glossary__R }}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0                                                                                                                R}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul Repairing Industry}{\v Repairing_Industry}\tab\tab}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0 #{\footnote Glossary__S }}{
+\par}\pard\ql{\b\ul\f0\fs27\cf0\up0\dn0                                                        S}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul Sabotage Missions}{\v Sabotage_Missions}\tab\tab}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul sending the turn by email}{\v sending_the_turn_by_email}\tab\tab}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 {\ul starting coordinates}{\v starting_coordinates}\tab\tab}{
+\par}\pard\ql{\f0\fs24\cf0\up0\dn0 #{\footnote Glossary__T }#{\footnote Glossary__U }#{\footnote Glossary__V }#{\footnote Glossary__W }#{\footnote Glossary__X }#{\footnote Glossary__Y }#{\footnote Glossary__Z }}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 Cloaking Device}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote Cloaking_Device}The cloaking device will hide your ship from the enemy as it advances along the warp path. However, if the enemy has researched the warp scanner, there is a small chance each turn that your cloaked ship will be visible.}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 Combat Strength}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote Combat_Strength}The combat strength of a planet or ship is the combined strengths of troops, mechs and planetary/ship defenses.}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 Landscape View}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote Landscape_View}A view of the planet's surface, with indicators of troop/mech strength, planetary defenses and resource production}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 Melnikons}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote Melnikons}A cowardly race of insectoids that prey upon the weakest planets they can find, attacking poorly-defended systems and eating the survivors of their cowardly invasions.}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 planet management frame}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote planet_management_frame}Clicking on any of your planets will activate the Planet Management frame on the right side of the main game screen}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 Repairing Industry}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote Repairing_Industry}After a planet has been sabotaged, you can repair your resource production facilities. Once you have maximized your repairs, an advanced resource production facility is required for further gains in productivity.}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 Sabotage Missions}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote Sabotage_Missions}With one mech and Level II ship shields, your ships can attempt to infiltrate the defenses of enemy planets and wreak terrible damage on their resource production capacity, potentially destroying all industry.  This is a useful tactic for a weaker opponent against a heavily-defended planet.}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 sending the turn by email}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote sending_the_turn_by_email}To send the saved game file to your opponent, simply attach the file to your email message and send.}{
+\par}\pard
+\page
+\ql{\b\f0\fs24\cf0\up0\dn0 starting coordinates}{
+\par}\pard\ql{\f0\fs20\cf0\up0\dn0 #{\footnote starting_coordinates}The letter and number to the left of the ship on the warp path indicates what sector of the galaxy the ship launched from.}{
+\par}\pard
+\page
+}
+

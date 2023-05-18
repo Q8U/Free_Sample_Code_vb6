@@ -1,0 +1,538 @@
+[Root]
+Most Recent Package=Standard Setup Package 2
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+User.DLL=
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\ZlibOCX2.dll=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\LASER1.WAV=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\LASER2.WAV=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=
+
+[Package|Standard Setup Package 1|Files Removed]
+c:\program files\microsoft visual studio\vb98\4000 - june 99\laser1.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\laser2.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\launch.wav=
+
+[Package|Standard Setup Package 1|Files In Project]
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000ad.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM\ZlibOCX2.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\LASER1.WAV=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\LASER2.WAV=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000ad.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\ZlibOCX2.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000ad.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=multi
+Size=1.44 MB
+Title=4000AD
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=4000AD
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|4000AD]
+Icon1=4000ad.exe
+Title1=4000AD
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version
+ProjectFolder=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99
+ServerSideCab=
+File1=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version\setup.exe
+File2=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version\Setup.Lst
+File3=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version\4000ad1.CAB
+File4=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version\4000ad2.CAB
+File5=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Full Version\4000ad3.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Base
+
+[Package|Standard Setup Package 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 2|Files Found]
+
+[Package|Standard Setup Package 2|Files Released]
+User.DLL=
+
+[Package|Standard Setup Package 2|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\ZlibOCX2.dll=
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=
+
+[Package|Standard Setup Package 2|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 2|Files Added]
+c:\program files\microsoft visual studio\vb98\4000 - june 99\1turn.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\4000cfg.txt=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\2turns.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\3turns.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\4000.cnt=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\4000.hlp=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\4turns.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\5turns.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\6turns.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\7turns.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\access.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\ambient1.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\ambient2.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\ambient3.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\readme.txt=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\short3.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\regfile.exe=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\attack.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\badnews.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\biofail.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\button1.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\button2.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\button3.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\button4.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\button5.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\detonate.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\disintegrate.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\explode.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\intro.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\overrun.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\laser1.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\laser2.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\launch.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\launch3.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\quiet.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\research.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\sabotage.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\short1.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\short2.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\short4.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\short5.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\short6.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\warning.wav=
+
+[Package|Standard Setup Package 2|Files Removed]
+c:\program files\microsoft visual studio\vb98\4000 - june 99\laser1.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\laser2.wav=
+c:\program files\microsoft visual studio\vb98\4000 - june 99\launch.wav=
+c:\windows\system\tabctl32.ocx=
+c:\windows\system\msvbvm60.dll=
+c:\windows\system\oleaut32.dll=
+c:\windows\system\olepro32.dll=
+c:\windows\system\asycfilt.dll=
+c:\windows\system\stdole2.tlb=
+c:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\comcat.dll=
+
+[Package|Standard Setup Package 2|Files In Project]
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000ad.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=No
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=No
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=No
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=No
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=No
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=No
+C:\WINDOWS\SYSTEM\ZlibOCX2.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\LASER1.WAV=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\LASER2.WAV=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=Yes
+
+[Package|Standard Setup Package 2|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 2|Install Locations]
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000ad.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\TABCTL32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\ZlibOCX2.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=$(AppPath)
+
+[Package|Standard Setup Package 2|Configure Shared Files]
+Applicable=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000ad.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\1TURN.WAV=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000cfg.txt=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\2turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\3turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.CNT=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4000.HLP=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\4turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\5turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\6turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\7turns.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\access.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient1.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient2.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\ambient3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Readme.txt=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\regfile.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\attack.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\badnews.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\biofail.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button1.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button2.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button4.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\button5.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\detonate.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\disintegrate.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\explode.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\intro.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\overrun.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\launch3.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Quiet.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\research.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\sabotage.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short1.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short2.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short4.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short5.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\short6.wav=No
+C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\warning.wav=No
+
+[Package|Standard Setup Package 2|Distribution]
+Type=multi
+Size=1.44 MB
+Title=4000 A.D.
+
+[Package|Standard Setup Package 2|IconGroups]
+Group0=4000AD
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 2|4000AD]
+Icon1=4000ad.exe
+Title1=4000AD
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 2|Package]
+PackageFolder=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Base
+ProjectFolder=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99
+ServerSideCab=
+File1=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Base\setup.exe
+File2=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Base\Setup.Lst
+File3=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Base\4000ad1.CAB
+File4=C:\Program Files\Microsoft Visual Studio\VB98\4000 - June 99\Base\4000ad2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz

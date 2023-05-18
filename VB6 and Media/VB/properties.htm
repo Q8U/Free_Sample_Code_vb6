@@ -1,0 +1,299 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>EQPro 1.5 Documentation</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<!--webbot bot="Include" u-include="menu.htm" tag="BODY" startspan -->
+
+<table border="0" width="100%" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="83%" align="center" bgcolor="#000000" colspan="6">
+      <p align="left"><font face="Tahoma" size="3" color="#FFFFFF"><b>&nbsp;
+      EQPro 1.5 Documentation</b></font></td>
+  </tr>
+  <tr>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="index.html" class="MenuItm">Introduction</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="properties.htm" class="MenuItm">Properties</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="methods.htm" class="MenuItm">Methods</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="events.htm" class="MenuItm">Events</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="constants.htm" class="MenuItm">Constants</a></b></font></td>
+    <td width="16.6%" align="center" bgcolor="#000000"><font face="Tahoma" size="2" color="#FFFFFF"><b><a href="codesamples.htm" class="MenuItm">Code
+      Samples</a></b></font></td>
+  </tr>
+</table>
+
+<!--webbot bot="Include" endspan i-checksum="9903" -->
+<p><font face="Tahoma" size="2">EQPro's properties are used to give information
+about every aspect of every mixer device in the system, such as the number of
+mixers, input, output and advanced lines, plus the ability to change every
+possible property of any of these components.</font></p>
+<p><font face="Tahoma" size="2"><b><a name="ActiveLine"></a>ActiveLine</b> As
+Long</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Used to set or retrieve the active line ID.</font></p>
+  <p><font face="Tahoma" size="2">EQPro's slider will be attached to this line.<br>
+  Changes to the slider will be reflected to the line's value, and changes to
+  the line's value will be reflected to the slider position.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>ActiveLineName(</b><i>[ShotName As Boolean]</i><b>)</b>
+As String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Used to retrieve the active line name.</font></p>
+  <p><font face="Tahoma" size="2">If the property is called with the ShortName
+  parameter as True, it will return the short name version.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="ActiveMixer"></a>ActiveMixer</b> As
+Integer</font></p>
+<blockquote>
+  <p><font size="2" face="Tahoma">Sets or returns the active mixer index.</font></p>
+  <p><font size="2" face="Tahoma">A system may have one or more sound cards
+  installed and this property should be used to select the mixer from the
+  available installed mixers. Every sound card, properly installed, should have
+  its own mixer driver.</font></p>
+  <p><font face="Tahoma" size="2">The property <a href="#MixerCount">MixerCount</a>
+  will return the total number of mixers installed, being 0 the first mixer and
+  MixerCount - 1 the last one.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>ActiveMixerName</b> As String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the active mixer name.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="AdvancedLinesCount"></a>AdvancedLinesCount</b>
+As Integer</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the number, minus one, of advanced
+  lines available in the active mixer.</font></p>
+  <p><font face="Tahoma" size="2">Advanced lines are those that control some
+  custom property or feature a sound card, such as the 3D Sound of the
+  SoundBlaster AWE32/64.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>AdvancedLinesDirection(</b><i>idx As Integer</i><b>)</b>
+As <a href="constants.htm#DirectionConstants">DirectionConstants</a></font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the direction, input or output, of the
+  advanced line referenced by the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>AdvancedLinesID(</b><i>idx As Integer</i><b>)</b>
+As Long</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the ID of the advanced line referenced
+  by the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>AdvancedLinesList(</b><i>idx As Integer, [ShortName
+As Boolean]</i><b>) </b>As String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the name of the advanced line
+  referenced by the idx value.</font></p>
+  <p><font face="Tahoma" size="2">If the property is called with the ShortName
+  parameter as True, it will return the short name version.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="AdvancedLinesRange"></a>AdvancedLinesRange(</b><i>idx
+As Integer</i><b>) </b>As Long()</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the range of valid values that the
+  advanced line, referenced by the idx value can return.</font></p>
+  <p><font face="Tahoma" size="2">This property returns an array, where:</font></p>
+  <blockquote>
+    <p><font face="Tahoma" size="2">AdvancedLinesRange(1) is the lowest value<br>
+    AdvancedLinesRange(2) is the highest value</font></p>
+  </blockquote>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>AdvancedLinesType(</b><i>idx As Integer</i><b>)
+</b>As <a href="constants.htm#LineTypeConstants">LineTypeConstants</a></font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the type of the advanced line
+  referenced by rge idx value.</font></p>
+  <p><font face="Tahoma" size="2">The possible values are fader, switch and
+  numeric.<br>
+  Some non-standard, or proprietary line types other than the supported by EQPro
+  will be available as numeric line types. It is not guaranteed that these
+  special kind of lines will work with EQPro.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>AdvancedLinesValue(</b><i>idx As Integer</i><b>)
+</b>As Long</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the value of the advanced line
+  referenced by the idx value.</font></p>
+  <p><font face="Tahoma" size="2">This value will be in the range specified by
+  the <a href="#AdvancedLinesRange">AdvancedLinesRange</a> property.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="HasMute"></a>HasMute(</b><i>LineID
+As Long</i><b>) </b>As Boolean</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns True whether if the line referenced by
+  the LineID value supports muting.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="InputLineCount"></a>InputLineCount </b>As
+Integer</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the number, minus one, of available
+  input lines.</font></p>
+  <p><font face="Tahoma" size="2">Input lines are those that can be used as
+  recording sources, such as the Microphone, Line In, etc..</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>InputLineID(</b><i>idx As Integer</i><b>)</b>
+As Long</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the ID of the input line referenced by
+  the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>InputLineList(</b><i>idx As Integer</i><b>) </b>As
+String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the name of the input line referenced
+  by the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>Layout </b>As <a href="constants.htm#Alignment">Alignment</a></font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns the layout of EQPro's slider.</font></p>
+  <p><font face="Tahoma" size="2">The EQPro's slider supports two layouts:
+  vertical and horizontal.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="MixerCount"></a>MixerCount </b>As
+Integer</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the number, minus one, of available
+  mixers installed.</font></p>
+  <p><font face="Tahoma" size="2">Usually, every properly installed sound card
+  should have its one mixer driver.<br>
+  The <a href="#ActiveMixer">ActiveMixer</a> property can be used to make EQPro
+  use one of the available installed mixers.</font></p>
+  <p><font face="Tahoma" size="2">As a reference, you can see all the available
+  mixer devices in the Multimedia Control Panel application.<br>
+  Select START-&gt;Settings-&gt;Control Panel, double click the Multimedia icon
+  and choose the Devices tab. Then, expand the Mixer Devices item to see a list
+  of installed mixer drivers.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>MixerList(</b><i>idx As Integer</i><b>) </b>As
+String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the name of the mixer device
+  referenced by the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="Mute"></a>Mute </b>As Boolean</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns the mute state of the <a href="#ActiveLine">ActiveLine</a>.</font></p>
+  <p><font face="Tahoma" size="2">Before changing the value of this property you
+  should check if the ActiveLine supports muting by reading the value in the <a href="#HasMute">HasMute</a>
+  property:</font></p>
+  <blockquote>
+    <pre>EQProCtrl.HasMute(EQProCtrl.ActiveLine)</pre>
+  </blockquote>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="OutputLineCount"></a>OutputLineCount
+</b>As Integer</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the number, minus one, of available
+  output lines.</font></p>
+  <p><font face="Tahoma" size="2">Output lines are those that are used to
+  produce some sort of audio output, such as the WaveOut, Speaker, LineOut,
+  etc...</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="OutputLineID"></a>OutputLineID(</b><i>idx
+As Integer</i><b>)</b> As Long</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the ID of the output line referenced
+  by the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>OutputLineList(</b><i>idx As Integer</i><b>) </b>As
+String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the name of the output line referenced
+  by the idx value.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>Panning </b>As Integer</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns the panning value of the <a href="#ActiveLine">ActiveLine</a>.</font></p>
+  <p><font face="Tahoma" size="2">The value returned is a number from -100 to
+  100.<br>
+  Where:</font></p>
+  <blockquote>
+    <p><font face="Tahoma" size="2">-100 is full panning to the left<br>
+    0 is at its default center position<br>
+    100 is full panning to the right</font></p>
+  </blockquote>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>RaiseErrors</b> As Boolean</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns whether EQPro should display
+  its own error messages.</font></p>
+  <p><font face="Tahoma" size="2">This property should be turned on (set to
+  True) at development stages, then set it to False when the application will be
+  distributed to end users.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>RefreshPriority </b>As <a href="constants.htm#Priority">Priority</a></font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns how often EQPro should refresh
+  it self and fetch the new values for every monitored line.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b><a name="SelectForRecording"></a>SelectForRecording
+</b>As Boolean</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns whether the <a href="#ActiveLine">ActiveLine</a>
+  is a recording source.</font></p>
+  <p><font face="Tahoma" size="2">Some sound cards, such as the Sound Blaster
+  series support selecting multiple lines for recording, other sound cards will
+  only accept one source at a time. For this type of sound cards, EQPro will
+  handle automatically the dis-selection of any previously selected line in
+  order to allow selecting a new one.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>TickStyle </b>As <a href="constants.htm#TickStyleConstants">TickStyleConstants</a></font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns the style of the tick markers
+  on the EQPro's slider.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>ToolTip </b>As String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns the text that will be
+  displayed when the mouse pointer is over the control.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>Value </b>As Long</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Sets or returns the value of the <a href="#ActiveLine">ActiveLine</a>.</font></p>
+  <hr noshade size="1">
+</blockquote>
+<p><font face="Tahoma" size="2"><b>Version </b>As String</font></p>
+<blockquote>
+  <p><font face="Tahoma" size="2">Returns the internal version of the EQPro
+  control.</font></p>
+</blockquote>
+
+</body>
+
+</html>

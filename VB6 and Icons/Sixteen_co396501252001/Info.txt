@@ -1,0 +1,12 @@
+Icon Editor version 2.0
+
+   The editor no longer needs 2 clicks to draw.  Just hold the left mouse button and drag to draw.
+
+   How the program handles transparency:  Since black is the only color that looks good with the transparency bit set, I decided to make pure black "RGB(0,0,0)" always transparent.  The transparent pixels will appear as a black square with a white dot in the center of it on the main editing area.  If you want opaque black, make a second black in the palette with a non-zero value such as "RGB(1,1,1)" or "RGB(0,0,1)".  When loading an existing icon, the editor will automatically attempt to convert to this format (transparent and opaque black) if there is an unused color available.  A black square around a palette color indicates the current drawing color.  The white arrow indicates the transparent color (if any).
+
+   The editor now has the ability to read from multiple-icon files, but it will refuse to overwrite them.  It will only let you overwrite a file that has one icon or create a new file.
+   The "Open File" form now shows an icon preview, and it indicates whether or not there the file is usable by Icon Editor.
+
+   If you don't have VB6, I can send you IconEdit.exe.  Send me an e-mail me at Psalm37_9@yahoo.com
+
+Gregg

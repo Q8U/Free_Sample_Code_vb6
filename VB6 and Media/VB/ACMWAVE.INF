@@ -1,0 +1,29 @@
+[DSP upload]
+Filename=AcmWave.zip
+Replacements=
+Version=1.2
+FileURL=
+Description=This componens can play/record wave streams like some  components on the internet. but can compress/decompress wave  streams using installed CODEC on windows 95/98(NT maybe  well. I couldn't test) - GSM 6.1, IMA ADPCM, Mi
+Delphi 1.0=N
+Delphi 2.0=N
+Delphi 3.0=Y
+C++Builder 1.0=N
+File Status=Shareware
+Full Source=NOT included
+Category=Multimedia
+Note=Shareware with nag-screen register fee is US$ 30
+Additional info=Text file ( extension txt )
+
+[DSP Support]
+DSP Support=N
+
+[Versions available]
+Delphi 1.0=
+Delphi 2.0=
+Delphi 3.0=
+C++Builder 1.0=
+
+[Uploader]
+Author name=Sang-Hee, Kim
+Author E-mail=potpry@iname.com
+Author URL=http://archi.snu.ac.kr/shkim/delphi

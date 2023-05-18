@@ -1,0 +1,40 @@
+Advanced ZIP Password Recovery: how to order
+============================================
+
+You can register your copy of AZPR at a cost of $30. Select one
+of the following ways:
+
+1. Through the World Wide Web. This is the fastest and easiest
+   way.	Your credit card information is sent directly to the
+   credit card processor in a very secure manner, so that
+   nobody else can see it. That protects you by ensuring that
+   nobody but you and the credit card processor will see your
+   card.
+   For details on ordering AZPR through the Web, please go to
+   the AZPR page at:
+     http://www.elcomsoft.com/azpr.html
+   and follow the link "Order the Fully Licensed Version of AZPR".
+   Or, you can go directly to the order page:
+     https://www.regnow.com/softsell/nph-softsell.cgi?item=1170-6&referrer=7
+
+2. You can also register the program by sending us the purchase order,
+   or money order, or cheque -- look at the order form ("order.frm").
+   Phone and fax orders are accepted as well. Please don't send cash to
+   our mailing address.
+
+3. We do accept wire transfers to our bank account. Please contact
+   our order department (orders@regnow.com) asking for the invoice
+   for product 1170-6. You'll be charged for extra $10, however (bank
+   fees). For other types of payments (online/mail/phone/fax), there
+   are no additional charges.
+
+On payment approval (usually, in a few minutes after you'll
+register -- for online orders), we'll send you the registration key
+which will remove all limitations of unregistered version, such as
+maximum password length. Your registration will be valid for all
+future versions of AZPR.
+
+If you will not get your registration key within a reasonable
+amount of time (two business days for credit card payments or
+two weeks for other payments), please notify us about that!
+We're very sorry for any inconvenience caused by those delays.

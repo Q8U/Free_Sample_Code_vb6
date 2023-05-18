@@ -1,0 +1,172 @@
+VERSION 5.00
+Begin VB.PropertyPage Behavior 
+   Caption         =   "Behavior"
+   ClientHeight    =   4485
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6420
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   4485
+   ScaleWidth      =   6420
+   Begin VB.Frame Frame2 
+      Caption         =   "Properties"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000C0&
+      Height          =   3975
+      Left            =   240
+      TabIndex        =   5
+      Top             =   240
+      Width           =   5895
+      Begin VB.CheckBox chkMemorizeField 
+         Caption         =   "MemorizeField"
+         ForeColor       =   &H80000001&
+         Height          =   285
+         Left            =   240
+         TabIndex        =   3
+         Top             =   2280
+         Width           =   1380
+      End
+      Begin VB.CheckBox chkSelectText 
+         Caption         =   "SelectText"
+         ForeColor       =   &H80000001&
+         Height          =   285
+         Left            =   240
+         TabIndex        =   2
+         Top             =   1680
+         Width           =   1140
+      End
+      Begin VB.CheckBox chkHighPicture 
+         Caption         =   "HighPicture"
+         ForeColor       =   &H80000001&
+         Height          =   285
+         Left            =   240
+         TabIndex        =   1
+         Top             =   1080
+         Width           =   1140
+      End
+      Begin VB.CheckBox chkHighlight 
+         Caption         =   "Highlight"
+         ForeColor       =   &H80000001&
+         Height          =   285
+         Left            =   240
+         TabIndex        =   0
+         Top             =   360
+         Width           =   1020
+      End
+      Begin VB.CheckBox chkMemorizeScroll 
+         Caption         =   "MemorizeScroll"
+         ForeColor       =   &H80000001&
+         Height          =   285
+         Left            =   240
+         TabIndex        =   4
+         Top             =   3045
+         Width           =   1500
+      End
+      Begin VB.Label Label3 
+         BackStyle       =   0  'Transparent
+         Caption         =   "If checked, this Property will enable any Picture Box on focus to have its background color changed."
+         ForeColor       =   &H80000001&
+         Height          =   495
+         Left            =   1800
+         TabIndex        =   6
+         Top             =   1080
+         Width           =   3855
+      End
+      Begin VB.Label Label5 
+         BackStyle       =   0  'Transparent
+         Caption         =   $"Behavior.pgx":0000
+         ForeColor       =   &H80000001&
+         Height          =   615
+         Left            =   1800
+         TabIndex        =   10
+         Top             =   2280
+         Width           =   3975
+      End
+      Begin VB.Label Label4 
+         BackStyle       =   0  'Transparent
+         Caption         =   $"Behavior.pgx":00A9
+         ForeColor       =   &H80000001&
+         Height          =   855
+         Left            =   1800
+         TabIndex        =   9
+         Top             =   3000
+         Width           =   3855
+      End
+      Begin VB.Label Label2 
+         BackStyle       =   0  'Transparent
+         Caption         =   "If checked, this Property will enable any Text Box on focus to have its text selected."
+         ForeColor       =   &H80000001&
+         Height          =   495
+         Left            =   1800
+         TabIndex        =   8
+         Top             =   1680
+         Width           =   3855
+      End
+      Begin VB.Label Label1 
+         BackStyle       =   0  'Transparent
+         Caption         =   "When you set the option Highlight to true, any Control added to the Main Picture Box will be highlighted whenever it is on Focus."
+         ForeColor       =   &H80000001&
+         Height          =   735
+         Left            =   1800
+         TabIndex        =   7
+         Top             =   390
+         Width           =   3855
+      End
+   End
+End
+Attribute VB_Name = "Behavior"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Private Sub chkMemorizeScroll_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkMemorizeField_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkSelectText_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkHighPicture_Click()
+    Changed = True
+End Sub
+
+
+Private Sub chkHighlight_Click()
+    Changed = True
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).MemorizeScroll = (chkMemorizeScroll.Value = vbChecked)
+    SelectedControls(0).MemorizeField = (chkMemorizeField.Value = vbChecked)
+    SelectedControls(0).SelectText = (chkSelectText.Value = vbChecked)
+    SelectedControls(0).HighPicture = (chkHighPicture.Value = vbChecked)
+    SelectedControls(0).Highlight = (chkHighlight.Value = vbChecked)
+End Sub
+
+
+Private Sub PropertyPage_SelectionChanged()
+    chkMemorizeScroll.Value = (SelectedControls(0).MemorizeScroll And vbChecked)
+    chkMemorizeField.Value = (SelectedControls(0).MemorizeField And vbChecked)
+    chkSelectText.Value = (SelectedControls(0).SelectText And vbChecked)
+    chkHighPicture.Value = (SelectedControls(0).HighPicture And vbChecked)
+    chkHighlight.Value = (SelectedControls(0).Highlight And vbChecked)
+End Sub
+
+

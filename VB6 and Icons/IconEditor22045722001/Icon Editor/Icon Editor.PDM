@@ -1,0 +1,102 @@
+[Root]
+Most Recent Package=Icon Editor 1.0.0
+
+
+[Package|Icon Editor 1.0.0|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Package
+
+[Package|Icon Editor 1.0.0|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Icon Editor 1.0.0|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Icon Editor 1.0.0|Files Found]
+
+[Package|Icon Editor 1.0.0|Files Released]
+
+[Package|Icon Editor 1.0.0|Missing Dependency Information]
+C:\Program Files\Accessories\MSPAINT.EXE=
+
+[Package|Icon Editor 1.0.0|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=
+
+[Package|Icon Editor 1.0.0|Files Added]
+
+[Package|Icon Editor 1.0.0|Files Removed]
+
+[Package|Icon Editor 1.0.0|Files In Project]
+D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Execute\V100\Icon Editor.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
+C:\Program Files\Accessories\MSPAINT.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Icon Editor 1.0.0|Configure Registry Files]
+Applicable=No
+
+[Package|Icon Editor 1.0.0|Configure Remote Servers]
+Applicable=No
+
+[Package|Icon Editor 1.0.0|Install Locations]
+D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Execute\V100\Icon Editor.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\Program Files\Accessories\MSPAINT.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Icon Editor 1.0.0|Configure Shared Files]
+Applicable=Yes
+D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Execute\V100\Icon Editor.exe=Yes
+C:\Program Files\Accessories\MSPAINT.EXE=Yes
+
+[Package|Icon Editor 1.0.0|Distribution]
+Type=single
+Size=1.44 MB
+Title=Icon Editor
+
+[Package|Icon Editor 1.0.0|IconGroups]
+Group0=Icon Editor
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Icon Editor 1.0.0|Icon Editor]
+Icon1="Icon Editor.exe"
+Title1=Icon Editor
+StartIn1=$(AppPath)
+Key1=Icon1
+Icon2=ST6UNST.EXE
+Title2=Uninstall Icon Editor
+StartIn2=$(AppPath)
+Key2=Icon3
+
+[Package|Icon Editor 1.0.0|Package]
+PackageFolder=D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Package
+ProjectFolder=D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor
+ServerSideCab=
+File1=D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Package\setup.exe
+File2=D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Package\Setup.Lst
+File3=D:\Uesr Directories\ali\Programming\Visual Basic\Icon Editor\Package\Icon Editor.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
